@@ -55,6 +55,10 @@ Eigene Tastenkürzel (`~/.config/hypr/bindings.lua`) übersetzt eine lokale
 Datei `~/.config/omarchy-language-de/keybindings.json` im selben Format wie
 `catalog/keybindings.json`.
 
+Eigene Änderungen an den Klonen gehören in
+`~/.config/omarchy-language-de/plugins/<name>.json` (`id` und `replace` wie
+in `catalog/plugins/`); ihre Ersetzungen werden an den Katalog angehängt.
+
 ## Bleibt englisch
 
 - Sperrbildschirm und Passwortabfrage: Klone dieser Plugins verlieren die
