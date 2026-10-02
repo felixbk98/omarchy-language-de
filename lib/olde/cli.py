@@ -97,6 +97,10 @@ def source_active(config, catalog, manifest):
     use, so translating never adds widgets or services of its own."""
     source = catalog["source"]
     kinds = manifest.get("kinds") or []
+    # A catalog marked "skip" stays on the original (e.g. a clone that breaks
+    # in Omarchy); its texts are still tracked so `todo` stays quiet.
+    if catalog.get("skip"):
+        return False
     # Once the clone is in place it stands for the original.
     if clone_enabled(config, catalog["id"]) or in_bar(config, source):
         return True

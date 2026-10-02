@@ -17,6 +17,9 @@
 
 - `source`: Omarchy-Plugin, aus dem der Klon bei jedem `apply` frisch erzeugt
   wird. `id`: ID des Klons. `name`: deutscher Anzeigename (Manifest).
+- `skip`: Grund als Text. Dann bleibt das Original-Plugin aktiv, ein
+  vorhandener Klon wird bei `apply` entfernt. Für Plugins, die als Klon nicht
+  funktionieren.
 - `replace`: exakte Textstellen im Klon. `file` ist relativ zum Klon-Ordner
   (wie `omarchy-language-de extract` ihn anlegt). `find` muss genau `count`
   mal vorkommen (Standard 1), sonst wird der Eintrag übersprungen und als

@@ -2,6 +2,7 @@
   "source": "omarchy.menu",
   "id": "de.menu",
   "name": "Omarchy-Menü",
+  "skip": "Als Klon bekommt das Menü keine App-Liste (Omarchy 4.0.4: Apps leer). Die Menüeinträge übersetzt weiter catalog/menu.json.",
   "replace": [
     {
       "file": "MenuModel.js",
