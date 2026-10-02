@@ -13,6 +13,7 @@ offiziellen Erweiterungswege und übersteht jedes `omarchy update`.
 |---|---|
 | Menü | Übersetzte Einträge in `~/.config/omarchy/extensions/omarchy-menu.jsonc` (markierter Block) |
 | Tastenkürzel | Kleiner Block in `~/.config/hypr/hyprland.lua`, der nur die angezeigten Beschreibungen übersetzt |
+| Tastenkürzel-Liste | `bin/omarchy-keybindings-de` zeigt Omarchys Liste mit deutschen Tastennamen (Strg, Umschalt, Enter …); das Menü „Hilfe › Tastenkürzel“ ruft sie auf |
 | Leiste und Panels | Plugin-Klone (`de.*` in `~/.config/omarchy/plugins`), wie `omarchy plugin clone` sie anlegt |
 | Benachrichtigungen, OSD | Klone übersetzen Omarchy-Meldungen beim Anzeigen; Meldungen anderer Programme bleiben unberührt |
 | App-Namen | `Name[de]` in Omarchys Kopien unter `~/.local/share/applications` |

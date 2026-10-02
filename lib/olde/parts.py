@@ -62,6 +62,11 @@ OWN_MENU_ITEMS = {
     },
 }
 
+# Menu actions swapped for a German variant from this project.
+OWN_ACTIONS = {
+    "omarchy-menu-keybindings": "\"$HOME/.local/share/omarchy-language-de/bin/omarchy-keybindings-de\"",
+}
+
 
 def menu_rows():
     """Returns ({id: row}, misses) for the translated menu block."""
@@ -78,6 +83,8 @@ def menu_rows():
             continue
         new = dict(row)
         new["label"] = entry["label"]
+        if row.get("action") in OWN_ACTIONS:
+            new["action"] = OWN_ACTIONS[row["action"]]
         if "title" in row:
             if entry.get("title_en") == row["title"] and entry.get("title"):
                 new["title"] = entry["title"]

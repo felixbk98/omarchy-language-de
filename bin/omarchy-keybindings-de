@@ -1,0 +1,5 @@
+#!/bin/bash
+# Omarchy's keybindings list with German key names (Strg, Umschalt, Enter …).
+# Runs the original script; only the menu picker in between is swapped.
+lib=$(cd "$(dirname "$(readlink -f "$0")")/../lib/keybindings-menu" && pwd)
+PATH="$lib:$PATH" exec omarchy-menu-keybindings "$@"

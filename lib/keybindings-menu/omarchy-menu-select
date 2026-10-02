@@ -1,0 +1,26 @@
+#!/bin/bash
+# Stands in for omarchy-menu-select while omarchy-menu-keybindings runs (see
+# bin/omarchy-keybindings-de): shows the list with German key names and hands
+# the original line back, so the script still finds and runs the binding.
+
+shim_dir=$(cd "$(dirname "$0")" && pwd)
+PATH=$(tr ':' '\n' <<<"$PATH" | grep -vxF "$shim_dir" | paste -sd:)
+
+prompt=$1
+shift
+[[ $prompt == Keybindings ]] && prompt=Tastenkürzel
+
+catalog=$(mktemp)
+trap 'rm -f "$catalog"' EXIT
+jq -r '.exact | to_entries[] | "\(.key)\t\(.value)"' "$shim_dir/../../catalog/keybindings.json" >"$catalog" 2>/dev/null
+
+mapfile -t originals
+mapfile -t translated < <(printf '%s\n' "${originals[@]}" | awk -v catalog="$catalog" -f "$shim_dir/keys.awk")
+
+declare -A original_of
+for i in "${!translated[@]}"; do
+  original_of["${translated[$i]}"]=${originals[$i]}
+done
+
+selection=$(printf '%s\n' "${translated[@]}" | omarchy-menu-select "$prompt" "$@") || exit
+[[ -n $selection ]] && printf '%s\n' "${original_of[$selection]:-$selection}"
