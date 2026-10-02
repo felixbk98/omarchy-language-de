@@ -18,12 +18,9 @@ mapfile -t originals
 mapfile -t translated < <(printf '%s\n' "${originals[@]}" | awk -v catalog="$catalog" -f "$shim_dir/keys.awk")
 
 declare -A original_of
-shown=()
 for i in "${!translated[@]}"; do
-  [[ -z ${translated[$i]} ]] && continue
   original_of["${translated[$i]}"]=${originals[$i]}
-  shown+=("${translated[$i]}")
 done
 
-selection=$(printf '%s\n' "${shown[@]}" | omarchy-menu-select "$prompt" "$@") || exit
+selection=$(printf '%s\n' "${translated[@]}" | omarchy-menu-select "$prompt" "$@") || exit
 [[ -n $selection ]] && printf '%s\n' "${original_of[$selection]:-$selection}"

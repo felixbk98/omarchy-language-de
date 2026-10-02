@@ -44,9 +44,6 @@ function key_name(key, upper) {
   sub(/[ \t]+$/, "", keys)
   rest = substr($0, arrow)
   description = substr(rest, length("→ ") + 1)
-  # hyprshell's internal helper binds (closing on Alt release, Alt + `) are
-  # not shortcuts anyone presses on purpose; an empty line hides them.
-  if (description ~ /^Close Switch / || description == "Open Switch (reverse) with Alt + `") { lines[NR] = ""; next }
   if (description in german) rest = "→ " german[description]
 
   split(keys, halves, " \\+ ")
