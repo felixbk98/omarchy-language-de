@@ -112,12 +112,12 @@
     "Montag 08:03  ·  16. März 2026  ·  KW12"
   ],
   [
-    "Screen recording directory does not exist: /home/fbk/Videos",
-    "Ordner für Bildschirmaufnahmen fehlt: /home/fbk/Videos"
+    "Screen recording directory does not exist: /home/user/Videos",
+    "Ordner für Bildschirmaufnahmen fehlt: /home/user/Videos"
   ],
   [
-    "Created screenshot directory: /home/fbk/Pictures",
-    "Ordner für Screenshots angelegt: /home/fbk/Pictures"
+    "Created screenshot directory: /home/user/Pictures",
+    "Ordner für Screenshots angelegt: /home/user/Pictures"
   ],
   [
     "Screenshot saved to clipboard and file",

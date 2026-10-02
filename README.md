@@ -26,7 +26,7 @@ Klon nicht sauber bauen, wird er abgeschaltet und das Original übernimmt.
 ## Installation
 
 ```bash
-git clone https://github.com/<benutzer>/omarchy-language-de ~/.local/share/omarchy-language-de
+git clone https://github.com/felixbk98/omarchy-language-de ~/.local/share/omarchy-language-de
 ~/.local/share/omarchy-language-de/bin/omarchy-language-de apply
 ```
 
