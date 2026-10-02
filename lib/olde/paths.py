@@ -10,6 +10,7 @@ PLUGINS_DIR = os.path.join(CONFIG, "plugins")
 SHELL_JSON = os.path.join(CONFIG, "shell.json")
 MENU_EXTENSION = os.path.join(CONFIG, "extensions", "omarchy-menu.jsonc")
 HYPRLAND_LUA = os.path.join(HOME, ".config", "hypr", "hyprland.lua")
+LOCAL_KEYBINDINGS = os.path.join(HOME, ".config", "omarchy-language-de", "keybindings.json")
 APPLICATIONS = os.path.join(HOME, ".local", "share", "applications")
 
 STATE = os.path.join(HOME, ".local", "state", "omarchy-language-de")

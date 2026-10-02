@@ -97,7 +97,8 @@ def source_active(config, catalog, manifest):
     use, so translating never adds widgets or services of its own."""
     source = catalog["source"]
     kinds = manifest.get("kinds") or []
-    if in_bar(config, source):
+    # Once the clone is in place it stands for the original.
+    if clone_enabled(config, catalog["id"]) or in_bar(config, source):
         return True
     non_widget = [k for k in kinds if k != "bar-widget"]
     return bool(non_widget) and source not in ((config or {}).get("disabledPlugins") or [])
@@ -190,6 +191,7 @@ def apply_plugins(report, restart):
         final_dir = os.path.join(paths.PLUGINS_DIR, catalog["id"])
         if not found or not source_active(config, catalog, manifest):
             if os.path.exists(final_dir):
+                apply_settings(catalog, reverse=True)
                 disable_clone(catalog["id"])
                 shutil.rmtree(final_dir)
                 changed_files = True
@@ -203,6 +205,7 @@ def apply_plugins(report, restart):
         else:
             # A clone made from an older Omarchy must not outlive a failed
             # build: switch back to the original.
+            apply_settings(catalog, reverse=True)
             disable_clone(catalog["id"])
             if os.path.exists(final_dir):
                 shutil.rmtree(final_dir)
@@ -280,10 +283,19 @@ def cmd_apply(args):
     failed = [p["id"] for p in report["plugins"] if p["status"] == "failed"]
     if failed or report["problems"]:
         notify("Übersetzung: Problem", "Teilweise wieder Englisch.\nDetails: Menü › Aktualisieren › Übersetzung prüfen")
+    elif missed_total(report):
+        n = missed_total(report)
+        notify("Übersetzung: Update prüfen",
+               f"{n} {'Text ist' if n == 1 else 'Texte sind'} nach dem Update wieder englisch.")
     elif report["todo"]:
         notify("Übersetzung: neue Texte", f"{report['todo']} neue englische Texte seit dem Update.")
     print_status(report)
     return 1 if failed or report["problems"] else 0
+
+
+def missed_total(report):
+    plugins_missed = sum(p.get("missed", 0) for p in report.get("plugins", []))
+    return plugins_missed + len((report.get("menu") or {}).get("missed") or [])
 
 
 def cmd_remove(args):
@@ -319,7 +331,10 @@ def print_status(report):
         if p["status"] == "failed":
             print(f"  {p['id']}: Fehler, Original aktiv: {'; '.join(p.get('problems') or [])}")
         elif p.get("missed"):
-            print(f"  {p['id']}: {p['missed']} Stellen nicht gefunden (bleiben englisch)")
+            if p["missed"] == 1:
+                print(f"  {p['id']}: 1 Stelle nicht gefunden (bleibt englisch)")
+            else:
+                print(f"  {p['id']}: {p['missed']} Stellen nicht gefunden (bleiben englisch)")
     for problem in report.get("problems", []):
         print("Problem:", problem)
     if report.get("todo"):

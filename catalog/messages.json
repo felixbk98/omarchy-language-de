@@ -91,7 +91,7 @@
     "New theme": "Neues Theme",
     "Update Performed": "Update abgeschlossen",
     "Your system is now up to date": "Ihr System ist jetzt auf dem neuesten Stand",
-    "No audio devices found": "Keine Audiogeräte gefunden",
+    "No audio devices found": "Keine Audiogeräte",
     "Microphone muted": "Mikrofon stumm",
     "Microphone on": "Mikrofon an",
     "Logging out": "Wird abgemeldet",
@@ -101,55 +101,206 @@
     "Touchpad disabled": "Touchpad deaktiviert",
     "Touchscreen enabled": "Touchscreen aktiviert",
     "Touchscreen disabled": "Touchscreen deaktiviert",
-    "Launching application…": "App wird gestartet…"
+    "Launching application…": "Starte App…",
+    "Windows VM": "Windows-VM"
   },
   "patterns": [
-    ["^Reminder set for (\\d+) minutes$", "Erinnerung in $1 Minuten"],
-    ["^You'll be reminded at (\\d{1,2}:\\d{2})$", "Sie werden um $1 Uhr erinnert"],
-    ["^Your (\\d+) minutes are up$", "$1 Minuten sind um"],
-    ["^(\\d+)-min reminder in (\\d+)m (\\d+)s \\((\\d{1,2}:\\d{2})\\)$", "$1-Minuten-Erinnerung in $2 Min. $3 Sek. ($4)"],
-    ["^(\\d+)-min reminder in (\\d+)m \\((\\d{1,2}:\\d{2})\\)$", "$1-Minuten-Erinnerung in $2 Min. ($3)"],
-    ["^(\\d+)-min reminder in (\\d+)s \\((\\d{1,2}:\\d{2})\\)$", "$1-Minuten-Erinnerung in $2 Sek. ($3)"],
-    ["^(.+) in (\\d+)m (\\d+)s \\((\\d{1,2}:\\d{2})\\)$", "$1 in $2 Min. $3 Sek. ($4)"],
-    ["^(.+) in (\\d+)m \\((\\d{1,2}:\\d{2})\\)$", "$1 in $2 Min. ($3)"],
-    ["^(.+) in (\\d+)s \\((\\d{1,2}:\\d{2})\\)$", "$1 in $2 Sek. ($3)"],
-    ["^(.+) in 1 minutes$", "$1 in 1 Minute"],
-    ["^(.+) in (\\d+) minutes$", "$1 in $2 Minuten"],
-    ["^Battery is down to (\\d+)%$", "Akku nur noch bei $1%"],
-    ["^Battery (\\d+)%  ·  Holding at (\\d+(?:-\\d+)?)%  ·  (.+)$", "Akku $1%  ·  Ladegrenze $2%  ·  $3"],
-    ["^Battery (\\d+)%  ·  (\\d+)h (\\d+)m to full  ·   (.+)$", "Akku $1%  ·  voll in $2 Std. $3 Min.  ·   $4"],
-    ["^Battery (\\d+)%  ·  (\\d+)h to full  ·   (.+)$", "Akku $1%  ·  voll in $2 Std.  ·   $3"],
-    ["^Battery (\\d+)%  ·  (\\d+)m to full  ·   (.+)$", "Akku $1%  ·  voll in $2 Min.  ·   $3"],
-    ["^Battery (\\d+)%  ·  (\\d+)h (\\d+)m left  ·   (.+)$", "Akku $1%  ·  noch $2 Std. $3 Min.  ·   $4"],
-    ["^Battery (\\d+)%  ·  (\\d+)h left  ·   (.+)$", "Akku $1%  ·  noch $2 Std.  ·   $3"],
-    ["^Battery (\\d+)%  ·  (\\d+)m left  ·   (.+)$", "Akku $1%  ·  noch $2 Min.  ·   $3"],
-    ["^(.+)  ·  Temp (.+)  ·  Wind (.+)$", "$1  ·  Temperatur $2  ·  Wind $3"],
-    ["^(\\S+) (\\d{1,2}:\\d{2})  ·  0?(\\d{1,2}) (\\S+) (\\d{4})  ·  Week (\\d{1,2})$", "$1 $2  ·  $3. $4 $5  ·  KW$6"],
-    ["^Screen recording directory does not exist: (.+)$", "Ordner für Bildschirmaufnahmen fehlt: $1"],
-    ["^Created screenshot directory: (.+)$", "Ordner für Screenshots angelegt: $1"],
-    ["^Transcoded to (4k|1080p|720p) (mp4|gif)$", "In $2 ($1) konvertiert"],
-    ["^Transcoded to high (jpg|png)$", "In $1 (hohe Qualität) konvertiert"],
-    ["^Transcoded to medium (jpg|png)$", "In $1 (mittlere Qualität) konvertiert"],
-    ["^Transcoded to low (jpg|png)$", "In $1 (niedrige Qualität) konvertiert"],
-    ["^(.+) to (mp4|gif) \\((4k|1080p|720p)\\)$", "$1 als $2 ($3)"],
-    ["^(.+) is now the default editor$", "$1 ist jetzt der Standard-Editor"],
-    ["^(.+) is now the default browser$", "$1 ist jetzt der Standard-Browser"],
-    ["^(.+) is now the default terminal$", "$1 ist jetzt das Standard-Terminal"],
-    ["^No saved width found for (.+) on workspace (.+)$", "Keine gespeicherte Breite für $1 auf Arbeitsfläche $2"],
-    ["^Saved width for (.+) on workspace (.+)$", "Breite für $1 auf Arbeitsfläche $2 gespeichert"],
-    ["^Mirroring enabled \\((.+)\\)$", "Bildschirm wird gespiegelt ($1)"],
-    ["^The session was left unlocked \\(the shell did not secure the session within (\\d+)ms\\)\\.$", "Die Sitzung blieb ungesperrt (die Shell hat sie nicht innerhalb von $1 ms gesichert)."],
-    ["^Process crashed: (.+)$", "Abgestürzt: $1"],
-    ["^Could not send to (.+)$", "Senden an $1 fehlgeschlagen"],
-    ["^Sent to (.+)$", "An $1 gesendet"],
-    ["^(\\d+) files$", "$1 Dateien"],
-    ["^Received (.+)$", "$1 empfangen"],
-    ["^Saved to ([~/].*)$", "Gespeichert in $1"],
-    ["^Timezone is now set to (.+)$", "Zeitzone ist jetzt $1"],
-    ["^Click to run (\\d+) pending migrations\\.$", "Klicken, um $1 offene Migrationen auszuführen."],
-    ["^(.+) installed$", "$1 installiert"],
-    ["^Your new font is (.+)$", "Ihre neue Schriftart: $1"],
-    ["^Your new theme is (.+)$", "Ihr neues Theme: $1"],
-    ["^Launching (.+)…$", "$1 wird gestartet…"]
+    [
+      "^Reminder set for (\\d+) minutes$",
+      "Erinnerung in $1 Minuten"
+    ],
+    [
+      "^You'll be reminded at (\\d{1,2}:\\d{2})$",
+      "Sie werden um $1 Uhr erinnert"
+    ],
+    [
+      "^Your (\\d+) minutes are up$",
+      "$1 Minuten sind um"
+    ],
+    [
+      "^(\\d+)-min reminder in (\\d+)m (\\d+)s \\((\\d{1,2}:\\d{2})\\)$",
+      "$1-Minuten-Erinnerung in $2 Min. $3 Sek. ($4)"
+    ],
+    [
+      "^(\\d+)-min reminder in (\\d+)m \\((\\d{1,2}:\\d{2})\\)$",
+      "$1-Minuten-Erinnerung in $2 Min. ($3)"
+    ],
+    [
+      "^(\\d+)-min reminder in (\\d+)s \\((\\d{1,2}:\\d{2})\\)$",
+      "$1-Minuten-Erinnerung in $2 Sek. ($3)"
+    ],
+    [
+      "^(.+) in (\\d+)m (\\d+)s \\((\\d{1,2}:\\d{2})\\)$",
+      "$1 in $2 Min. $3 Sek. ($4)"
+    ],
+    [
+      "^(.+) in (\\d+)m \\((\\d{1,2}:\\d{2})\\)$",
+      "$1 in $2 Min. ($3)"
+    ],
+    [
+      "^(.+) in (\\d+)s \\((\\d{1,2}:\\d{2})\\)$",
+      "$1 in $2 Sek. ($3)"
+    ],
+    [
+      "^(.+) in 1 minutes$",
+      "$1 in 1 Minute"
+    ],
+    [
+      "^(.+) in (\\d+) minutes$",
+      "$1 in $2 Minuten"
+    ],
+    [
+      "^Battery is down to (\\d+)%$",
+      "Akku nur noch bei $1%"
+    ],
+    [
+      "^Battery (\\d+)%  ·  Holding at (\\d+(?:-\\d+)?)%  ·  (.+)$",
+      "Akku $1%  ·  Ladegrenze $2%  ·  $3"
+    ],
+    [
+      "^Battery (\\d+)%  ·  (\\d+)h (\\d+)m to full  ·   (.+)$",
+      "Akku $1%  ·  voll in $2 Std. $3 Min.  ·   $4"
+    ],
+    [
+      "^Battery (\\d+)%  ·  (\\d+)h to full  ·   (.+)$",
+      "Akku $1%  ·  voll in $2 Std.  ·   $3"
+    ],
+    [
+      "^Battery (\\d+)%  ·  (\\d+)m to full  ·   (.+)$",
+      "Akku $1%  ·  voll in $2 Min.  ·   $3"
+    ],
+    [
+      "^Battery (\\d+)%  ·  (\\d+)h (\\d+)m left  ·   (.+)$",
+      "Akku $1%  ·  noch $2 Std. $3 Min.  ·   $4"
+    ],
+    [
+      "^Battery (\\d+)%  ·  (\\d+)h left  ·   (.+)$",
+      "Akku $1%  ·  noch $2 Std.  ·   $3"
+    ],
+    [
+      "^Battery (\\d+)%  ·  (\\d+)m left  ·   (.+)$",
+      "Akku $1%  ·  noch $2 Min.  ·   $3"
+    ],
+    [
+      "^(.+)  ·  Temp (.+)  ·  Wind (.+)$",
+      "$1  ·  Temperatur $2  ·  Wind $3"
+    ],
+    [
+      "^(\\S+) (\\d{1,2}:\\d{2})  ·  0?(\\d{1,2}) (\\S+) (\\d{4})  ·  Week (\\d{1,2})$",
+      "$1 $2  ·  $3. $4 $5  ·  KW$6"
+    ],
+    [
+      "^Screen recording directory does not exist: (.+)$",
+      "Ordner für Bildschirmaufnahmen fehlt: $1"
+    ],
+    [
+      "^Created screenshot directory: (.+)$",
+      "Ordner für Screenshots angelegt: $1"
+    ],
+    [
+      "^Transcoded to (4k|1080p|720p) (mp4|gif)$",
+      "In $2 ($1) konvertiert"
+    ],
+    [
+      "^Transcoded to high (jpg|png)$",
+      "In $1 (hohe Qualität) konvertiert"
+    ],
+    [
+      "^Transcoded to medium (jpg|png)$",
+      "In $1 (mittlere Qualität) konvertiert"
+    ],
+    [
+      "^Transcoded to low (jpg|png)$",
+      "In $1 (niedrige Qualität) konvertiert"
+    ],
+    [
+      "^(.+) to (mp4|gif) \\((4k|1080p|720p)\\)$",
+      "$1 als $2 ($3)"
+    ],
+    [
+      "^(.+) is now the default editor$",
+      "$1 ist jetzt der Standard-Editor"
+    ],
+    [
+      "^(.+) is now the default browser$",
+      "$1 ist jetzt der Standard-Browser"
+    ],
+    [
+      "^(.+) is now the default terminal$",
+      "$1 ist jetzt das Standard-Terminal"
+    ],
+    [
+      "^No saved width found for (.+) on workspace (.+)$",
+      "Keine gespeicherte Breite für $1 auf Arbeitsfläche $2"
+    ],
+    [
+      "^Saved width for (.+) on workspace (.+)$",
+      "Breite für $1 auf Arbeitsfläche $2 gespeichert"
+    ],
+    [
+      "^Mirroring enabled \\((.+)\\)$",
+      "Bildschirm wird gespiegelt ($1)"
+    ],
+    [
+      "^The session was left unlocked \\(the shell did not secure the session within (\\d+)ms\\)\\.$",
+      "Die Sitzung blieb ungesperrt (die Shell hat sie nicht innerhalb von $1 ms gesichert)."
+    ],
+    [
+      "^Process crashed: (.+)$",
+      "Abgestürzt: $1"
+    ],
+    [
+      "^Could not send to (.+)$",
+      "Senden an $1 fehlgeschlagen"
+    ],
+    [
+      "^Sent to (.+)$",
+      "An $1 gesendet"
+    ],
+    [
+      "^(\\d+) files$",
+      "$1 Dateien"
+    ],
+    [
+      "^Received (.+)$",
+      "$1 empfangen"
+    ],
+    [
+      "^Saved to ([~/].*)$",
+      "Gespeichert in $1"
+    ],
+    [
+      "^Timezone is now set to (.+)$",
+      "Zeitzone ist jetzt $1"
+    ],
+    [
+      "^Click to run (\\d+) pending migrations\\.$",
+      "Klicken, um $1 offene Migrationen auszuführen."
+    ],
+    [
+      "^(.+) installed$",
+      "$1 installiert"
+    ],
+    [
+      "^Your new font is (.+)$",
+      "Ihre neue Schriftart: $1"
+    ],
+    [
+      "^Your new theme is (.+)$",
+      "Ihr neues Theme: $1"
+    ],
+    [
+      "^Launching (.+)…$",
+      "Starte $1…"
+    ]
+  ],
+  "ignore": [
+    "$(basename -- ",
+    "$(date +",
+    "/usr/lib/libretro",
+    "Battery is down to ${level}%",
+    "No plugin to ${1}",
+    "Transcoded to $resolution $format",
+    "Workspace layout set to $NEW_LAYOUT"
   ]
 }

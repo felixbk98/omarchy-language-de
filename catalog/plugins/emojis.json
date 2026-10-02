@@ -5,6 +5,12 @@
   "replace": [
     {
       "file": "Emojis.qml",
+      "find": "path: root.omarchyPath + \"/shell/plugins/emojis/emojis.json\"",
+      "replace": "path: decodeURIComponent(Qt.resolvedUrl(\"emojis.json\").toString().replace(/^file:\\/\\//, \"\"))",
+      "count": 1
+    },
+    {
+      "file": "Emojis.qml",
       "find": "text: root.filterText || \"Search emojis…\"",
       "replace": "text: root.filterText || \"Emojis suchen…\""
     },

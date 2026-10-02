@@ -50,6 +50,10 @@ omarchy-language-de remove   # alles entfernen, Originalzustand
 
 Im Menü: Aktualisieren › Übersetzung prüfen.
 
+Eigene Tastenkürzel (`~/.config/hypr/bindings.lua`) übersetzt eine lokale
+Datei `~/.config/omarchy-language-de/keybindings.json` im selben Format wie
+`catalog/keybindings.json`.
+
 ## Bleibt englisch
 
 - Sperrbildschirm und Passwortabfrage: Klone dieser Plugins verlieren die

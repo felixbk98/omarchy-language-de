@@ -149,8 +149,17 @@ def lua_string(value):
 
 def keybindings_lua():
     catalog = catalogs.load_json("keybindings.json", {})
-    exact = catalog.get("exact") or {}
-    patterns = catalog.get("patterns") or []
+    exact = dict(catalog.get("exact") or {})
+    patterns = list(catalog.get("patterns") or [])
+    # Own bindings (~/.config/hypr/bindings.lua) are translated from a local
+    # file, so personal texts stay out of the shared catalog.
+    try:
+        with open(paths.LOCAL_KEYBINDINGS, encoding="utf-8") as f:
+            local = json.load(f)
+        exact.update(local.get("exact") or {})
+        patterns += local.get("patterns") or []
+    except (OSError, ValueError):
+        pass
     table = ["{", "  exact = {"]
     table += [f"    [{lua_string(k)}] = {lua_string(v)}," for k, v in sorted(exact.items())]
     table += ["  },", "  patterns = {"]
