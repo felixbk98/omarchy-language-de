@@ -1,0 +1,224 @@
+{
+  "source": "omarchy.power",
+  "id": "de.power",
+  "name": "Energie",
+  "replace": [
+    {
+      "file": "Model.js",
+      "find": "return \"Threshold\"",
+      "replace": "return \"Ladegrenze\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"On battery\"",
+      "replace": "return \"Akkubetrieb\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Fully charged\"",
+      "replace": "return \"Voll geladen\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Charging\"",
+      "replace": "return \"Lädt\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Pumping power\"",
+      "replace": "    \"Pumpt Energie\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Injecting electrons\"",
+      "replace": "    \"Injiziert Elektronen\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Pouring juice\"",
+      "replace": "    \"Schenkt Saft nach\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Amassing watts\"",
+      "replace": "    \"Sammelt Watt\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Hoarding joules\"",
+      "replace": "    \"Bunkert Joule\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Sucking volts\"",
+      "replace": "    \"Saugt Volt\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Topping reserves\"",
+      "replace": "    \"Füllt Reserven auf\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Soaking amps\"",
+      "replace": "    \"Tankt Ampere\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Inhaling kilowatts\"",
+      "replace": "    \"Inhaliert Kilowatt\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Slurping power\"",
+      "replace": "    \"Schlürft Strom\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Spending joules\"",
+      "replace": "    \"Verprasst Joule\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Draining watts\"",
+      "replace": "    \"Zapft Watt ab\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Burning electrons\"",
+      "replace": "    \"Verbrennt Elektronen\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Sipping juice\"",
+      "replace": "    \"Nippt am Saft\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Spending coulombs\"",
+      "replace": "    \"Verjubelt Coulomb\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Bleeding amps\"",
+      "replace": "    \"Verliert Ampere\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Guzzling volts\"",
+      "replace": "    \"Schluckt Volt\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    \"Munching reserves\"",
+      "replace": "    \"Knabbert Reserven an\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "if (fullyCharged) return \"Fully charged\"",
+      "replace": "if (fullyCharged) return \"Voll geladen\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Battery\"",
+      "replace": "text: \"Akku\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoPair { label: \"Battery size\";",
+      "replace": "InfoPair { label: \"Kapazität\";",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoPair { label: \"Charge cycles\";",
+      "replace": "InfoPair { label: \"Ladezyklen\";",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "label: root.chargeThresholdActive ? \"Charge limit\" : (root.discharging ? \"Time left\" : \"Time to full\")",
+      "replace": "label: root.chargeThresholdActive ? \"Ladegrenze\" : (root.discharging ? \"Restlaufzeit\" : \"Voll in\")",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "(root.batteryFlowIdle ? \"-\" : (root.batteryInfo.time || \"—\"))",
+      "replace": "(root.batteryFlowIdle ? \"-\" : (String(root.batteryInfo.time || \"—\").replace(/(\\d+)h/, \"$1 h\").replace(/(\\d+)m\\b/, \"$1 min\")))",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "label: root.chargeThresholdActive ? \"Battery state\" : (root.discharging ? \"Discharging\" : \"Charging\")",
+      "replace": "label: root.chargeThresholdActive ? \"Ladestatus\" : (root.discharging ? \"Verbrauch\" : \"Ladeleistung\")",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "value: root.chargeThresholdActive ? \"Holding\" :",
+      "replace": "value: root.chargeThresholdActive ? \"Pausiert\" :",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"POWER PROFILE\"",
+      "replace": "text: \"ENERGIEPROFIL\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: String(modelData).charAt(0).toUpperCase() + String(modelData).slice(1)",
+      "replace": "text: ({ \"power-saver\": \"Sparmodus\", \"balanced\": \"Ausgewogen\", \"performance\": \"Leistung\" })[String(modelData)] || (String(modelData).charAt(0).toUpperCase() + String(modelData).slice(1))",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Battery, power profile, and system stats\"",
+      "replace": "\"description\": \"Akku, Energieprofil und Systemwerte\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "power-saver",
+    "balanced",
+    "performance",
+    "undefined",
+    "showPercentage",
+    "battery",
+    "omarchy-powerprofiles-set",
+    "ac",
+    "omarchy-battery-status",
+    "--shell",
+    "omarchy-powerprofiles-list",
+    "--active-state",
+    "omarchy-system-stats",
+    "system",
+    "opacity",
+    "Power",
+    "System"
+  ]
+}

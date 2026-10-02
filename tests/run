@@ -1,0 +1,20 @@
+#!/bin/bash
+# Checks the runtime message table (notifications, OSD) against
+# tests/messages.json, using the same DeText.js the clones get.
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+tmp=$(mktemp -d)
+trap 'rm -rf "$tmp"' EXIT
+python3 -c "import sys; sys.path.insert(0, '$root/lib'); from olde import parts; print(parts.messages_js())" |
+  sed '1s/^\.pragma library$//' >"$tmp/DeText.js"
+cat >>"$tmp/DeText.js" <<'JS'
+const tests = require(process.argv[2])
+let failed = 0
+for (const [input, expected] of tests) {
+  const got = trLines(input)
+  if (got !== expected) { failed++; console.log(`FEHLER: ${JSON.stringify(input)}\n  erwartet ${JSON.stringify(expected)}\n  erhalten ${JSON.stringify(got)}`) }
+}
+console.log(`${tests.length - failed}/${tests.length} Meldungen korrekt`)
+process.exit(failed ? 1 : 0)
+JS
+node "$tmp/DeText.js" "$root/tests/messages.json"

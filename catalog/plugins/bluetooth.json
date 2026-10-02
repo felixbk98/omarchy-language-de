@@ -1,0 +1,162 @@
+{
+  "source": "omarchy.bluetooth",
+  "id": "de.bluetooth",
+  "name": "Bluetooth",
+  "replace": [
+    {
+      "file": "Panel.qml",
+      "find": "\"Untangling wires\",",
+      "replace": "\"Kabel entwirren\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Streaming vikings\",",
+      "replace": "\"Wikinger funken\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Pairing mysteries\",",
+      "replace": "\"Paare stiften\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Herding headsets\",",
+      "replace": "\"Headsets hüten\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Taming radios\",",
+      "replace": "\"Funkwellen zähmen\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Summoning speakers\",",
+      "replace": "\"Boxen beschwören\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Wrangling codecs\",",
+      "replace": "\"Codecs bändigen\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Polishing packets\"\n",
+      "replace": "\"Pakete polieren\"\n"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"No adapter\"",
+      "replace": "return \"Kein Adapter\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Turned Off\"",
+      "replace": "return \"Ausgeschaltet\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "? \"Turn Bluetooth off\" : \"Turn Bluetooth on\"",
+      "replace": "? \"Bluetooth ausschalten\" : \"Bluetooth einschalten\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "? \"PAIRED\" : \"AVAILABLE\"",
+      "replace": "? \"GEKOPPELT\" : \"VERFÜGBAR\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"CONNECTED\"",
+      "replace": "text: \"VERBUNDEN\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "? \"No Bluetooth adapter\"",
+      "replace": "? \"Kein Bluetooth-Adapter\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "? \"Turn Bluetooth on to scan\"",
+      "replace": "? \"Zum Suchen Bluetooth einschalten\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": ": \"Scanning for devices…\"",
+      "replace": ": \"Suche nach Geräten…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Disconnect\"",
+      "replace": "return \"Trennen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Pair\"",
+      "replace": "return \"Koppeln\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Connect\"",
+      "replace": "return \"Verbinden\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Forgetting…\"",
+      "replace": "return \"Wird vergessen…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Disconnecting…\"",
+      "replace": "return \"Wird getrennt…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "? \"\" : \"Connected\"",
+      "replace": "? \"\" : \"Verbunden\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Connecting…\"",
+      "replace": "return \"Wird verbunden…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "|| \"Device\"",
+      "replace": "|| \"Gerät\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Forget\"",
+      "replace": "tooltipText: \"Vergessen\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Bluetooth device list with connect/disconnect\"",
+      "replace": "\"description\": \"Bluetooth-Geräte verbinden und trennen\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "connected",
+    "known",
+    "discovered",
+    "undefined",
+    "header",
+    "transparent",
+    "omarchy-audio-output-set-default",
+    "omarchy-bluetooth-device",
+    "connect",
+    "connecting",
+    "pair",
+    "disconnecting",
+    "disconnect",
+    "forget",
+    "forgetting",
+    "function",
+    "opacity",
+    "omarchy-bluetooth-power",
+    "off",
+    "on",
+    "Bluetooth",
+    "Network"
+  ]
+}

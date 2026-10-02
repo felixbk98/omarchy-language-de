@@ -1,0 +1,101 @@
+{
+  "source": "omarchy.menu",
+  "id": "de.menu",
+  "name": "Omarchy-Menü",
+  "replace": [
+    {
+      "file": "MenuModel.js",
+      "find": "kind: \"menu\", icon: \"\", iconFont: \"\", label: \"Go\", title: \"\"",
+      "replace": "kind: \"menu\", icon: \"\", iconFont: \"\", label: \"Suchen\", title: \"\""
+    },
+    {
+      "file": "Menu.qml",
+      "find": "root.item(root.activeMenu).label) : \"Go\") + \"…\"",
+      "replace": "root.item(root.activeMenu).label) : \"Suchen\") + \"…\""
+    },
+    {
+      "file": "Menu.qml",
+      "find": "(mode === \"input\" ? \"Input\" : \"Select\"))",
+      "replace": "(mode === \"input\" ? \"Eingabe\" : \"Auswahl\"))"
+    },
+    {
+      "file": "Menu.qml",
+      "find": "message: \"Do you want to uninstall \" + ((root.deleteTarget && root.deleteTarget.label) || \"\") + \"?\"\n          confirmText: \"Uninstall\"",
+      "replace": "message: ((root.deleteTarget && root.deleteTarget.label) || \"\") + \" deinstallieren?\"\n          confirmText: \"Deinstallieren\"\n          cancelText: \"Abbrechen\""
+    },
+    {
+      "file": "Menu.qml",
+      "find": "text: root.filterText ? \"No matches for “\" + root.filterText + \"”\" : \"Nothing here yet\"",
+      "replace": "text: root.filterText ? \"Keine Treffer für „\" + root.filterText + \"“\" : \"Noch keine Einträge\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Quickshell-powered Omarchy command menu\"",
+      "replace": "\"description\": \"Omarchy-Befehlsmenü auf Quickshell-Basis\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Launches the Omarchy menu\"",
+      "replace": "\"description\": \"Öffnet das Omarchy-Menü\""
+    }
+  ],
+  "ignore": [
+    "\\ue900",
+    "omarchy",
+    "xdg-terminal-exec",
+    "omarchy-shell shell toggle omarchy.menu '{\\\"menu\\\":\\\"root\\\"}'",
+    "OMARCHY_PATH",
+    "root",
+    "select",
+    "input",
+    "ok",
+    "HOME",
+    "menu",
+    "border",
+    "selected-border",
+    "bash",
+    "printf '%s\\\\n' ",
+    "drilldown",
+    "fonts",
+    "current=$(omarchy-font-current 2>/dev/null); omarchy-font-list 2>/dev/null | while read -r f; do [[ -z $f ]] && continue; printf '%s\\\\t%s\\\\t%s\\\\n' \\\"$f\\\" \\\"$f\\\" \\\"$current\\\"; done",
+    "omarchy-font-set ",
+    "power-profiles",
+    "current=$(powerprofilesctl get 2>/dev/null); omarchy-powerprofiles-list 2>/dev/null | while read -r p; do [[ -z $p ]] && continue; printf '%s\\\\t%s\\\\t%s\\\\n' \\\"$p\\\" \\\"$p\\\" \\\"$current\\\"; done",
+    "\\udb81\\udc0b",
+    "omarchy-powerprofiles-set autodetect ",
+    "function",
+    "apps.",
+    "apps",
+    "app",
+    "-lc",
+    "action",
+    "dmenu.",
+    "dmenu",
+    "link",
+    "transparent",
+    "omarchy-menu",
+    "section",
+    "string",
+    "object",
+    "go",
+    "item",
+    "omarchy-channel-current",
+    "omarchy-default-agent",
+    "omarchy-default-browser",
+    "omarchy-default-editor",
+    "omarchy-default-terminal",
+    "omarchy-dns",
+    " | awk '/^[A-Za-z]/ { provides = ($0 ~ /^Provides/); sub(/^[^:]*: /, \\\"\\\") }",
+    "None",
+    "${__omarchy_pkg_names[@]}",
+    "__omarchy_read_",
+    " 2>/dev/null) || :\\n",
+    "${__omarchy_read_",
+    "if { ",
+    "; } >/dev/null 2>&1; then echo ",
+    ":1; else echo ",
+    ":0; fi\\n",
+    "undefined",
+    "Compositor"
+  ]
+}

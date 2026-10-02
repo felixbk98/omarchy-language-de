@@ -1,0 +1,23 @@
+{
+  "source": "omarchy.microphone",
+  "id": "de.microphone",
+  "name": "Mikrofon",
+  "replace": [
+    {
+      "file": "Microphone.qml",
+      "find": "root.muted ? \"Microphone muted\" : (root.inUse ? \"Microphone in use\" : \"Microphone live\")",
+      "replace": "root.muted ? \"Mikrofon stumm\" : (root.inUse ? \"Mikrofon wird verwendet\" : \"Mikrofon an\")"
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Mic input state and mute toggle\"",
+      "replace": "\"description\": \"Mikrofonstatus und Stummschaltung\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "omarchy-shell shell toggle omarchy.audio",
+    "Microphone",
+    "Audio"
+  ]
+}

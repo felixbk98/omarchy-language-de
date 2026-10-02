@@ -1,0 +1,401 @@
+{
+  "source": "omarchy.network",
+  "id": "de.network",
+  "name": "Netzwerk",
+  "replace": [
+    {
+      "file": "Model.js",
+      "find": "return band + \"ghz\"",
+      "replace": "return String(band).replace(\".\", \",\") + \"ghz\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"WI-FI BAND\"",
+      "replace": "return \"WLAN-BAND\"",
+      "count": 2
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"WI-FI BAND: \" + label.toUpperCase()",
+      "replace": "return \"WLAN-BAND: \" + label.toUpperCase()"
+    },
+    {
+      "file": "Model.js",
+      "find": "if (band === \"auto\") return \"Let Wi-Fi pick the band\"",
+      "replace": "if (band === \"auto\") return \"Band automatisch wählen\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Stay on \" + bandLabel(band)",
+      "replace": "return \"Bei \" + bandLabel(band) + \" bleiben\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return (v / 1000).toFixed(v % 1000 === 0 ? 0 : 1) + \"gbit\"",
+      "replace": "return (v / 1000).toFixed(v % 1000 === 0 ? 0 : 1).replace(\".\", \",\") + \"gbit\""
+    },
+    {
+      "file": "Model.js",
+      "find": "(n / 1024).toFixed(1) + \" KB\"",
+      "replace": "(n / 1024).toFixed(1).replace(\".\", \",\") + \" KB\""
+    },
+    {
+      "file": "Model.js",
+      "find": "(n / (1024 * 1024)).toFixed(1) + \" MB\"",
+      "replace": "(n / (1024 * 1024)).toFixed(1).replace(\".\", \",\") + \" MB\""
+    },
+    {
+      "file": "Model.js",
+      "find": "(n / (1024 * 1024 * 1024)).toFixed(2) + \" GB\"",
+      "replace": "(n / (1024 * 1024 * 1024)).toFixed(2).replace(\".\", \",\") + \" GB\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Timeout\"",
+      "replace": "return \"Keine Antwort\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return value.toFixed(value > 0 && value < 10 ? 1 : 0) + \" ms\"",
+      "replace": "return value.toFixed(value > 0 && value < 10 ? 1 : 0).replace(\".\", \",\") + \" ms\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"KNOWN NETWORKS\"",
+      "replace": "return \"BEKANNTE NETZWERKE\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"OTHER NETWORKS\"",
+      "replace": "return \"ANDERE NETZWERKE\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Passphrase required\"",
+      "replace": "return \"Passwort erforderlich\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Wrong password\"",
+      "replace": "return \"Falsches Passwort\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Network lost\"",
+      "replace": "return \"Netzwerk nicht erreichbar\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Disconnected\"",
+      "replace": "return \"Getrennt\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Connection failed\"",
+      "replace": "return \"Verbindung fehlgeschlagen\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Failed to connect\"",
+      "replace": "return \"Verbindung nicht möglich\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Wiring bits\",",
+      "replace": "\"Bits verdrahten\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Handling packets\",",
+      "replace": "\"Pakete jonglieren\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Sorting frames\",",
+      "replace": "\"Frames sortieren\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Hauling bytes\",",
+      "replace": "\"Bytes schleppen\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Routing crumbs\",",
+      "replace": "\"Krümel routen\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Counting collisions\",",
+      "replace": "\"Kollisionen zählen\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "\"Bending light\",",
+      "replace": "\"Licht biegen\","
+    },
+    {
+      "file": "Panel.qml",
+      "find": "Networking.wifiEnabled ? \"Turn Wi-Fi off\" : \"Turn Wi-Fi on\"",
+      "replace": "Networking.wifiEnabled ? \"WLAN ausschalten\" : \"WLAN einschalten\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "connection = info.ssid || \"Wi-Fi\"",
+      "replace": "connection = info.ssid || \"WLAN\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Show QR code\"",
+      "replace": "tooltipText: \"QR-Code anzeigen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Run a speed test\"",
+      "replace": "tooltipText: \"Speedtest starten\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return root.info.ssid || \"Wi-Fi\"",
+      "replace": "return root.info.ssid || \"WLAN\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "(root.kind === \"disconnected\" ? \"Disconnected\" : \"No connection\")",
+      "replace": "(root.kind === \"disconnected\" ? \"Getrennt\" : \"Keine Verbindung\")"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"NOT CONNECTED\"",
+      "replace": "return \"NICHT VERBUNDEN\"",
+      "count": 2
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoLabel { text: \"Packet Loss\" }",
+      "replace": "InfoLabel { text: \"Paketverlust\" }"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoLabel { text: \"Receiving\" }",
+      "replace": "InfoLabel { text: \"Eingehend\" }"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoLabel { text: \"Sending\" }",
+      "replace": "InfoLabel { text: \"Ausgehend\" }"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoLabel { text: \"Downloaded\" }",
+      "replace": "InfoLabel { text: \"Empfangen\" }"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoLabel { text: \"Uploaded\" }",
+      "replace": "InfoLabel { text: \"Gesendet\" }"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "InfoLabel { text: \"IP Address\" }",
+      "replace": "InfoLabel { text: \"IP-Adresse\" }"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Copy IP\"",
+      "replace": "tooltipText: \"IP kopieren\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Copy gateway\"",
+      "replace": "tooltipText: \"Gateway kopieren\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"AUTOMATIC\"",
+      "replace": "text: \"AUTOMATISCH\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "? \"Let Wi-Fi pick the band\"",
+      "replace": "? \"Band automatisch wählen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": ": \"Stay on \" + root.bandLabel(root.bandCurrent)",
+      "replace": ": \"Bei \" + root.bandLabel(root.bandCurrent) + \" bleiben\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"DNS PROVIDER\"",
+      "replace": "text: \"DNS-ANBIETER\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Use DNS from DHCP\"",
+      "replace": "tooltipText: \"DNS per DHCP beziehen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Set DNS to Cloudflare\"",
+      "replace": "tooltipText: \"DNS von Cloudflare nutzen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Set DNS to Google\"",
+      "replace": "tooltipText: \"DNS von Google nutzen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Set custom DNS servers\"",
+      "replace": "tooltipText: \"Eigene DNS-Server festlegen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "    text: provider\n",
+      "replace": "    text: provider === \"Custom\" ? \"Eigener\" : provider\n"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"SCANNING WI-FI…\"",
+      "replace": "text: \"WLAN-SUCHE LÄUFT…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Connecting…\"",
+      "replace": "return \"Wird verbunden…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Disconnecting…\"",
+      "replace": "return \"Wird getrennt…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"Forgetting…\"",
+      "replace": "return \"Wird vergessen…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "root.failureReason || \"Failed\"",
+      "replace": "root.failureReason || \"Fehlgeschlagen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "if (isConnected) return \"Connected\"",
+      "replace": "if (isConnected) return \"Verbunden\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "reason = \"Timed out connecting\"",
+      "replace": "reason = \"Verbinden dauerte zu lange\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "reason = \"Timed out disconnecting\"",
+      "replace": "reason = \"Trennen dauerte zu lange\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "reason = \"Timed out forgetting\"",
+      "replace": "reason = \"Vergessen dauerte zu lange\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Forget network\"",
+      "replace": "text: \"Netzwerk vergessen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "(row.net.ssid || \"Hidden\")",
+      "replace": "(row.net.ssid || \"Verborgenes Netzwerk\")"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "placeholderText: \"Identity (user@domain)\"",
+      "replace": "placeholderText: \"Identität (name@domain)\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "placeholderText: \"Passphrase\"",
+      "replace": "placeholderText: \"Passwort\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: row.isFailed ? \"Wrong password\" : \"Connecting...\"",
+      "replace": "text: row.isFailed ? \"Falsches Passwort\" : \"Wird verbunden…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Connect\"",
+      "replace": "tooltipText: \"Verbinden\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "property string tooltipText: \"Copy to clipboard\"",
+      "replace": "property string tooltipText: \"In Zwischenablage kopieren\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Wi-Fi list and connection state\"",
+      "replace": "\"description\": \"WLAN-Liste und Verbindungsstatus\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "disconnected\\t\\t\\t",
+    "disconnected",
+    "wifi",
+    "ethernet",
+    "gbit",
+    "mbit",
+    "2.4ghz",
+    "5ghz",
+    "6ghz",
+    "60ghz",
+    "ghz",
+    "auto",
+    "Auto",
+    "ssid",
+    "number",
+    " KB",
+    " MB",
+    " GB",
+    " ms",
+    "u=$(uuidgen); IFS= read -r pw;",
+    " nmcli connection add type wifi con-name \\\"$1\\\" ssid \\\"$1\\\" connection.uuid \\\"$u\\\"",
+    " wifi-sec.key-mgmt wpa-eap 802-1x.eap peap 802-1x.phase2-auth mschapv2",
+    " 802-1x.identity \\\"$2\\\" 802-1x.auth-timeout 8 >/dev/null",
+    " && printf 'set 802-1x.password %s\\\\nsave\\\\nquit\\\\n' \\\"$pw\\\" | nmcli connection edit uuid \\\"$u\\\" >/dev/null",
+    " && nmcli connection up uuid \\\"$u\\\"",
+    " || { nmcli connection delete uuid \\\"$u\\\" >/dev/null 2>&1; false; }",
+    "undefined",
+    "connect",
+    "disconnect",
+    "forget",
+    "dns",
+    "header",
+    "band",
+    "DHCP",
+    "Cloudflare",
+    "Google",
+    "Custom",
+    "transparent",
+    "bash",
+    "printf %s ",
+    " | wl-copy",
+    "omarchy-network-band",
+    "Ethernet",
+    "omarchy-dns",
+    "omarchy-launch-floating-terminal-with-presentation",
+    "nmcli-eap",
+    "omarchy-network-status",
+    "--verbose",
+    "opacity",
+    "Ping",
+    "Gateway",
+    "hover-cursor",
+    "normal",
+    "Network"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source": "omarchy.reminders",
+  "id": "de.reminders",
+  "name": "Erinnerungen",
+  "replace": [
+    {
+      "file": "ReminderFlow.qml",
+      "find": "root.step === \"message\" ? \"Reminder message\" : \"Remind in minutes\"",
+      "replace": "root.step === \"message\" ? \"Erinnerungstext\" : \"Minuten bis zur Erinnerung\""
+    },
+    {
+      "file": "ReminderFlow.qml",
+      "find": "(root.promptText + \"...\")",
+      "replace": "(root.promptText + \"…\")"
+    },
+    {
+      "file": "ReminderFlow.qml",
+      "find": "\"Invalid reminder\", \"Enter the number of minutes\"",
+      "replace": "\"Ungültige Erinnerung\", \"Bitte die Anzahl der Minuten eingeben\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Interactive reminder setup flow\"",
+      "replace": "\"description\": \"Erinnerungen interaktiv einrichten\""
+    }
+  ],
+  "ignore": [
+    "OMARCHY_PATH",
+    "minutes",
+    "menu",
+    "border",
+    "message",
+    "function",
+    "transparent",
+    "omarchy-reminders",
+    "undefined"
+  ]
+}

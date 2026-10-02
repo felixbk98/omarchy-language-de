@@ -1,0 +1,34 @@
+{
+  "source": "omarchy.emojis",
+  "id": "de.emojis",
+  "name": "Emojis",
+  "replace": [
+    {
+      "file": "Emojis.qml",
+      "find": "text: root.filterText || \"Search emojis…\"",
+      "replace": "text: root.filterText || \"Emojis suchen…\""
+    },
+    {
+      "file": "Emojis.qml",
+      "find": "text: \"No matches for “\" + root.filterText + \"”\"",
+      "replace": "text: \"Keine Treffer für „\" + root.filterText + \"“\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Search, copy, and type emojis\"",
+      "replace": "\"description\": \"Emojis suchen, kopieren und eingeben\""
+    }
+  ],
+  "ignore": [
+    "undefined",
+    "OMARCHY_PATH",
+    "menu",
+    "border",
+    "function",
+    "transparent",
+    "omarchy-emojis"
+  ],
+  "transform": {
+    "emojis.json": "emoji-keywords"
+  }
+}

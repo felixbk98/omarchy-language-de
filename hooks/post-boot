@@ -1,0 +1,7 @@
+#!/bin/bash
+# omarchy-language-de: fallback for Omarchy updates that bypassed
+# `omarchy update` (e.g. a plain pacman -Syu). Only acts when the installed
+# Omarchy version differs from the last translated one.
+tool="$HOME/.local/share/omarchy-language-de/bin/omarchy-language-de"
+[[ -x $tool ]] && "$tool" apply --if-changed >/dev/null
+exit 0

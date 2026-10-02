@@ -1,0 +1,141 @@
+{
+  "source": "omarchy.clock",
+  "id": "de.clock",
+  "name": "Uhr",
+  "replace": [
+    {
+      "file": "BarWidget.qml",
+      "find": "return Qt.formatDateTime(date, activeFormat.replace(/ww/g,",
+      "replace": "return Qt.locale().toString(date, (({ \"ddd d MMM HH:mm\": \"ddd d. MMM HH:mm\", \"ddd d MMM h:mm AP\": \"ddd d. MMM h:mm AP\", \"d MMMM 'W'ww yyyy\": \"d. MMMM 'W'ww yyyy\" })[activeFormat] || activeFormat).replace(/'W'ww/g, \"'KW'ww\").replace(/ww/g,",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "readonly property var labelLocale: Qt.locale(\"en_US\")",
+      "replace": "readonly property var labelLocale: Qt.locale()",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return String(labelLocale.dayName(weekday, Locale.ShortFormat)).toUpperCase()",
+      "replace": "return String(labelLocale.standaloneDayName(weekday, Locale.ShortFormat)).toUpperCase()",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: Qt.formatDate(root.today, \"MMMM d\")",
+      "replace": "text: Qt.locale().toString(root.today, \"d. MMMM\")",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Back to today\"",
+      "replace": "text: \"Zurück zu heute\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"BORN\"",
+      "replace": "text: \"GEBOREN\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "placeholderText: \"year\"",
+      "replace": "placeholderText: \"Jahr\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"LIVE TO\"",
+      "replace": "text: \"WIRD\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"LIFE\"",
+      "replace": "text: \"LEBEN\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"W\"",
+      "replace": "text: \"KW\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Start weeks on \" + root.nextWeekStartLabel",
+      "replace": "text: \"Woche am \" + root.nextWeekStartLabel + \" beginnen\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: Qt.formatDate(root.viewDate, \"MMMM yyyy\").toUpperCase()",
+      "replace": "text: Qt.locale().toString(root.viewDate, \"MMMM yyyy\").toUpperCase()",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Previous month\"",
+      "replace": "tooltipText: \"Vorheriger Monat\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "tooltipText: \"Next month\"",
+      "replace": "tooltipText: \"Nächster Monat\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Date/time label with a calendar popup\"",
+      "replace": "\"description\": \"Datum und Uhrzeit mit Kalender\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "verticalFormat",
+    "HH\\n—\\nmm",
+    "format",
+    "dddd HH:mm",
+    "verticalFormatAlt",
+    "dd\\nMMM\\n'W'ww\\n''yy",
+    "formatAlt",
+    "d MMMM 'W'ww yyyy",
+    "id",
+    "function",
+    "bar",
+    "settings",
+    "anchorItem",
+    "hostWidget",
+    "Panel.qml",
+    "refresh",
+    "omarchy-menu-timezone",
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "dddd h:mm AP",
+    "HH:mm",
+    "h:mm AP",
+    "ddd d MMM HH:mm",
+    "ddd d MMM h:mm AP",
+    "yyyy-MM-dd HH:mm",
+    "h\\n—\\nmm\\nAP",
+    "HH\\nmm",
+    "number",
+    "undefined",
+    "birthYear",
+    "lifeExpectancy",
+    "weekStartDay",
+    "centerHoverRevealSuppressed",
+    "transparent",
+    "Memento Mori",
+    "Clock",
+    "Time"
+  ]
+}

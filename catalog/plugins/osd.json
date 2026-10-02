@@ -1,0 +1,78 @@
+{
+  "source": "omarchy.osd",
+  "id": "de.osd",
+  "name": "Bildschirmanzeige",
+  "replace": [
+    {
+      "file": "Osd.qml",
+      "find": "import \"OsdModel.js\" as OsdModel\n",
+      "replace": "import \"OsdModel.js\" as OsdModel\nimport \"DeText.js\" as DeText\n",
+      "count": 1
+    },
+    {
+      "file": "Osd.qml",
+      "find": "    message = next.message\n",
+      "replace": "    // Media OSDs show track titles; only Omarchy's own texts are translated.\n    var media = String(next.iconKey).indexOf(\"media\") === 0 || String(next.iconKey).indexOf(\"player\") === 0\n    message = media ? next.message : DeText.tr(next.message)\n",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Quickshell volume, brightness, and status overlays.\"",
+      "replace": "\"description\": \"Quickshell-Einblendungen für Lautstärke, Helligkeit und Status.\""
+    }
+  ],
+  "ignore": [
+    "media",
+    "player",
+    "osd",
+    "ok",
+    "open",
+    "closed",
+    "transparent",
+    "omarchy-osd",
+    "popups",
+    "border",
+    "volume-muted",
+    "volume-mute",
+    "muted",
+    "mute",
+    "volume-low",
+    "volume-medium",
+    "volume-high",
+    "volume",
+    "microphone-muted",
+    "microphone-off",
+    "mic-muted",
+    "mic-off",
+    "microphone",
+    "mic",
+    "keyboard",
+    "brightness",
+    "display",
+    "touchpad",
+    "touch",
+    "touchscreen",
+    "reboot",
+    "restart",
+    "shutdown",
+    "power",
+    "poweroff",
+    "logout",
+    "sign-out",
+    "leave",
+    "media-source",
+    "player-source",
+    "media-play",
+    "player-play",
+    "media-pause",
+    "player-pause",
+    "media-next",
+    "player-next",
+    "media-previous",
+    "player-previous",
+    "undefined"
+  ],
+  "generate": {
+    "DeText.js": "messages"
+  }
+}

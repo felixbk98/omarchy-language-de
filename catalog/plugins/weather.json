@@ -1,0 +1,105 @@
+{
+  "source": "omarchy.weather",
+  "id": "de.weather",
+  "name": "Wetter",
+  "replace": [
+    {
+      "file": "Panel.qml",
+      "find": "return Model.dayName(dateString, function(date) { return Qt.formatDate(date, \"dddd\") })",
+      "replace": "return Model.dayName(dateString, function(date) { return Qt.locale().toString(date, \"dddd\") })",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"][d.getDay()]",
+      "replace": "return [\"Sonntag\", \"Montag\", \"Dienstag\", \"Mittwoch\", \"Donnerstag\", \"Freitag\", \"Samstag\"][d.getDay()]",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "placeholderText: \"Search city\"",
+      "replace": "placeholderText: \"Ort suchen\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"FEELS\"",
+      "replace": "text: \"GEFÜHLT\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"HUMID\"",
+      "replace": "text: \"FEUCHTE\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Fetching forecast…\"",
+      "replace": "text: \"Vorhersage wird geladen…\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Weather pill with detail popup\"",
+      "replace": "\"description\": \"Wetteranzeige mit Detailansicht\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "bar",
+    "settings",
+    "anchorItem",
+    "hostWidget",
+    "Panel.qml",
+    "omarchy-notification-send \\\"$(omarchy-weather-status)\\\"",
+    "object",
+    "string",
+    "us",
+    "usa",
+    "united states",
+    "united states of america",
+    "liberia",
+    "myanmar",
+    "burma",
+    "imperial",
+    "metric",
+    "open-meteo",
+    "wttr",
+    "max",
+    "\\ue346",
+    "\\ue313",
+    "undefined",
+    "function",
+    "centerHoverRevealSuppressed",
+    "HOME",
+    "unit",
+    "refreshMinutes",
+    " mph",
+    " km/h",
+    "https://api.open-meteo.com/v1/forecast",
+    "?latitude=",
+    "&longitude=",
+    "&daily=weather_code,temperature_2m_max,temperature_2m_min",
+    "&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code,is_day",
+    "&forecast_days=4",
+    "&timezone=auto",
+    "curl",
+    "-fsS",
+    "--max-time",
+    "omarchy-weather-location",
+    "--set",
+    "--clear",
+    "https://geocoding-api.open-meteo.com/v1/search?name=",
+    "&count=5&language=en&format=json",
+    "yyyy-MM-dd",
+    "https://wttr.in/",
+    "?format=j1",
+    "https://wttr.in/?format=%l",
+    "transparent",
+    "WIND",
+    "min",
+    "Weather",
+    "Info"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "source": "omarchy.speedtest",
+  "id": "de.speedtest",
+  "name": "Speedtest",
+  "copy": {
+    "SpeedTestOverlayDe.qml": "Ui/SpeedTestOverlay.qml"
+  },
+  "replace": [
+    {
+      "file": "Panel.qml",
+      "find": "root.error = root.stderrText || \"Speed test failed\"",
+      "replace": "root.error = root.stderrText || \"Speedtest fehlgeschlagen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "root.connectionName = fields[1] || \"Wi-Fi\"",
+      "replace": "root.connectionName = fields[1] || \"WLAN\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "runAgainTooltip: \"Measure again via fast.com\"",
+      "replace": "runAgainTooltip: \"Erneut messen über fast.com\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "  SpeedTestOverlay {\n",
+      "replace": "  SpeedTestOverlayDe {\n"
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Internet speed test with download and upload dials\"",
+      "replace": "\"description\": \"Internet-Speedtest mit Tachos für Download und Upload\""
+    },
+    {
+      "file": "SpeedTestOverlayDe.qml",
+      "find": "property string runAgainTooltip: \"Measure again\"",
+      "replace": "property string runAgainTooltip: \"Erneut messen\""
+    },
+    {
+      "file": "SpeedTestOverlayDe.qml",
+      "find": "text: \"Run Again\"",
+      "replace": "text: \"Erneut ausführen\""
+    }
+  ],
+  "ignore": [
+    "down",
+    "up",
+    "function",
+    "omarchy-network-speedtest",
+    "omarchy-network-status",
+    "wifi",
+    "ethernet",
+    "Ethernet",
+    "DOWNLOAD",
+    "UPLOAD",
+    "Speed Test"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "source": "omarchy.monitor",
+  "id": "de.monitor",
+  "name": "Bildschirm",
+  "replace": [
+    {
+      "file": "Model.js",
+      "find": "return \"Sun blast\"",
+      "replace": "return \"Sonnenbrand\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Solar flare\"",
+      "replace": "return \"Sonneneruption\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Golden hour\"",
+      "replace": "return \"Goldene Stunde\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Even day\"",
+      "replace": "return \"Tageslicht\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Soft glow\"",
+      "replace": "return \"Sanfter Schein\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Lamp light\"",
+      "replace": "return \"Lampenlicht\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Candlelit\"",
+      "replace": "return \"Kerzenschein\"",
+      "count": 1
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Night owl\"",
+      "replace": "return \"Nachteule\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Display\"",
+      "replace": "text: \"Bildschirm\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "return \"FIXED BRIGHTNESS\"",
+      "replace": "return \"FESTE HELLIGKEIT\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"BRIGHTNESS\"",
+      "replace": "text: \"HELLIGKEIT\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"TEXT SIZE\"",
+      "replace": "text: \"TEXTGRÖSSE\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"SCALE\"",
+      "replace": "text: \"SKALIERUNG\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"DISPLAYS\"",
+      "replace": "text: \"BILDSCHIRME\"",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "(monitorRow.display.focused ? \" · focused\" : \"\")",
+      "replace": "(monitorRow.display.focused ? \" · aktiv\" : \"\")",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: root.effectiveScale(scaleValue) + \"x\"",
+      "replace": "text: String(root.effectiveScale(scaleValue)).replace(\".\", \",\") + \"x\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Brightness slider and laptop display controls\"",
+      "replace": "\"description\": \"Helligkeit und Bildschirmeinstellungen\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "undefined",
+    "scale",
+    "brightness",
+    "textsize",
+    "monitors",
+    "got ",
+    "omarchy-brightness-display",
+    "--no-osd",
+    "--monitor",
+    "hyprctl",
+    "keyword",
+    "monitor",
+    ",disable",
+    ",preferred,auto,auto",
+    "bash",
+    "omarchy-hyprland-monitor-scaling ",
+    "omarchy-display-text-size",
+    "omarchy-monitor-state",
+    "unavailable",
+    "interactive",
+    "px",
+    "System"
+  ]
+}

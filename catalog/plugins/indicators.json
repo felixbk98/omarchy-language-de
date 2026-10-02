@@ -1,0 +1,227 @@
+{
+  "source": "omarchy.indicators",
+  "id": "de.indicators",
+  "name": "Statusanzeigen",
+  "replace": [
+    {
+      "file": "indicators/Dictation.qml",
+      "find": "activeTooltipText: state",
+      "replace": "activeTooltipText: ({ \"recording\": \"Aufnahme läuft\", \"transcribing\": \"Text wird erkannt\" })[state] || state",
+      "count": 1
+    },
+    {
+      "file": "indicators/Dictation.qml",
+      "find": "inactiveTooltipText: \"Dictate\"",
+      "replace": "inactiveTooltipText: \"Diktieren\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/Dnd.qml",
+      "find": "activeTooltipText: \"Allow Notifications\"",
+      "replace": "activeTooltipText: \"Benachrichtigungen erlauben\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/Dnd.qml",
+      "find": "inactiveTooltipText: \"Silence Notifications\"",
+      "replace": "inactiveTooltipText: \"Benachrichtigungen stummschalten\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/NightLight.qml",
+      "find": "activeTooltipText: \"Day Light\"",
+      "replace": "activeTooltipText: \"Tageslicht\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/NightLight.qml",
+      "find": "inactiveTooltipText: \"Night Light\"",
+      "replace": "inactiveTooltipText: \"Nachtlicht\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/ScreenRecording.qml",
+      "find": "activeTooltipText: \"Stop recording\"",
+      "replace": "activeTooltipText: \"Aufnahme beenden\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/ScreenRecording.qml",
+      "find": "inactiveTooltipText: \"Screen Recording\"",
+      "replace": "inactiveTooltipText: \"Bildschirmaufnahme\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/StayAwake.qml",
+      "find": "activeTooltipText: \"Allow Idle Lock & Screensaver\"",
+      "replace": "activeTooltipText: \"Sperre und Bildschirmschoner erlauben\"",
+      "count": 1
+    },
+    {
+      "file": "indicators/StayAwake.qml",
+      "find": "inactiveTooltipText: \"Stay Awake\"",
+      "replace": "inactiveTooltipText: \"Wach bleiben\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Manual state indicators\"",
+      "replace": "\"description\": \"Statusanzeigen für manuell eingeschaltete Funktionen\"",
+      "count": 2
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Indicators\"",
+      "replace": "\"label\": \"Statusanzeigen\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Choose which indicators this widget instance should show. Leave empty to show all indicators.\"",
+      "replace": "\"description\": \"Legt fest, welche Statusanzeigen hier erscheinen. Leer lassen, um alle anzuzeigen.\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"noSelectionText\": \"All indicators\"",
+      "replace": "\"noSelectionText\": \"Alle Statusanzeigen\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"placeholderText\": \"Search indicators...\"",
+      "replace": "\"placeholderText\": \"Statusanzeigen suchen…\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"emptyText\": \"No indicators\"",
+      "replace": "\"emptyText\": \"Keine Statusanzeigen\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Dictation\"",
+      "replace": "\"label\": \"Diktieren\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Voice typing status\"",
+      "replace": "\"description\": \"Zeigt, ob gerade diktiert wird\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Screen recording\"",
+      "replace": "\"label\": \"Bildschirmaufnahme\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"GPU screen recorder status\"",
+      "replace": "\"description\": \"Status der Bildschirmaufnahme\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Reminder\"",
+      "replace": "\"label\": \"Erinnerung\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Queued reminder status\"",
+      "replace": "\"description\": \"Anstehende Erinnerungen\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Night light\"",
+      "replace": "\"label\": \"Nachtlicht\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Blue-light filter\"",
+      "replace": "\"description\": \"Blaulichtfilter\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Do not disturb\"",
+      "replace": "\"label\": \"Nicht stören\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Notification silencing\"",
+      "replace": "\"description\": \"Benachrichtigungen stummschalten\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Stay awake\"",
+      "replace": "\"label\": \"Wach bleiben\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Idle lock and screensaver override\"",
+      "replace": "\"description\": \"Sperre und Bildschirmschoner aussetzen\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"label\": \"Always Show\"",
+      "replace": "\"label\": \"Immer anzeigen\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Show inactive indicators without waiting for hover.\"",
+      "replace": "\"description\": \"Inaktive Statusanzeigen immer anzeigen, nicht erst beim Darüberfahren.\"",
+      "count": 1
+    }
+  ],
+  "ignore": [
+    "Dictation",
+    "ScreenRecording",
+    "Reminder",
+    "NightLight",
+    "Dnd",
+    "StayAwake",
+    "alwaysShow",
+    "string",
+    "id",
+    "number",
+    "object",
+    "refresh",
+    "inactive",
+    "active",
+    "indicators/",
+    ".qml",
+    "bar",
+    "moduleName",
+    "settings",
+    "indicatorBlock",
+    "indicatorHost",
+    "activeOverride",
+    "idle",
+    "recording",
+    "transcribing",
+    "bash",
+    "omarchy-voxtype-status",
+    "omarchy-voxtype-config",
+    "omarchy-reminder",
+    "show",
+    "--json",
+    "pgrep",
+    "--quiet",
+    "^gpu-screen-recorder",
+    "omarchy-capture-screenrecording --stop-recording",
+    "omarchy-menu toggle trigger.capture.screenrecord",
+    "Indicators",
+    "Status"
+  ]
+}

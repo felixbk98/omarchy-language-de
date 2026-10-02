@@ -1,0 +1,1366 @@
+{
+  "apps": {
+    "en": "Apps",
+    "label": "Apps"
+  },
+  "learn": {
+    "en": "Learn",
+    "label": "Hilfe"
+  },
+  "trigger": {
+    "en": "Trigger",
+    "label": "Aktionen"
+  },
+  "style": {
+    "en": "Style",
+    "label": "Stil"
+  },
+  "setup": {
+    "en": "Setup",
+    "label": "Einrichten"
+  },
+  "install": {
+    "en": "Install",
+    "label": "Installieren"
+  },
+  "remove": {
+    "en": "Remove",
+    "label": "Entfernen"
+  },
+  "update": {
+    "en": "Update",
+    "label": "Aktualisieren"
+  },
+  "about": {
+    "en": "About",
+    "label": "Info"
+  },
+  "system": {
+    "en": "System",
+    "label": "System"
+  },
+  "system.screensaver": {
+    "en": "Screensaver",
+    "label": "Bildschirmschoner"
+  },
+  "system.lock": {
+    "en": "Lock",
+    "label": "Sperren"
+  },
+  "system.suspend": {
+    "en": "Suspend",
+    "label": "Energie sparen"
+  },
+  "system.hibernate": {
+    "en": "Hibernate",
+    "label": "Ruhezustand"
+  },
+  "system.logout": {
+    "en": "Logout",
+    "label": "Abmelden"
+  },
+  "system.reboot": {
+    "en": "Reboot",
+    "label": "Neu starten"
+  },
+  "system.shutdown": {
+    "en": "Shutdown",
+    "label": "Herunterfahren"
+  },
+  "learn.keybindings": {
+    "en": "Keybindings",
+    "label": "Tastenkürzel"
+  },
+  "learn.omarchy": {
+    "en": "Omarchy",
+    "label": "Omarchy"
+  },
+  "learn.hyprland": {
+    "en": "Hyprland",
+    "label": "Hyprland"
+  },
+  "learn.arch": {
+    "en": "Arch",
+    "label": "Arch"
+  },
+  "learn.neovim": {
+    "en": "Neovim",
+    "label": "Neovim"
+  },
+  "learn.bash": {
+    "en": "Bash",
+    "label": "Bash"
+  },
+  "learn.tmux-keybindings": {
+    "en": "Tmux",
+    "label": "Tmux"
+  },
+  "learn.herdr-keybindings": {
+    "en": "Herdr",
+    "label": "Herdr"
+  },
+  "learn.community": {
+    "en": "Community",
+    "label": "Community"
+  },
+  "trigger.emoji": {
+    "en": "Emoji",
+    "label": "Emoji"
+  },
+  "trigger.reminder": {
+    "en": "Reminder",
+    "label": "Erinnerung"
+  },
+  "trigger.capture": {
+    "en": "Capture",
+    "label": "Aufnehmen"
+  },
+  "trigger.capture.screenshot": {
+    "en": "Screenshot",
+    "label": "Screenshot"
+  },
+  "trigger.capture.screenrecord.stop": {
+    "en": "Stop Screenrecording",
+    "label": "Bildschirmaufnahme beenden"
+  },
+  "trigger.capture.screenrecord": {
+    "en": "Screenrecord",
+    "label": "Bildschirmaufnahme"
+  },
+  "trigger.capture.text": {
+    "en": "Text",
+    "label": "Text"
+  },
+  "trigger.capture.qr": {
+    "en": "QR Code",
+    "label": "QR-Code"
+  },
+  "trigger.capture.color": {
+    "en": "Color",
+    "label": "Farbe"
+  },
+  "trigger.capture.screenrecord.no-audio": {
+    "en": "With no audio",
+    "label": "Ohne Ton"
+  },
+  "trigger.capture.screenrecord.desktop-audio": {
+    "en": "With desktop audio",
+    "label": "Mit Systemton"
+  },
+  "trigger.capture.screenrecord.microphone": {
+    "en": "With desktop + microphone audio",
+    "label": "Mit Systemton + Mikrofon"
+  },
+  "trigger.capture.screenrecord.webcam": {
+    "en": "With desktop + microphone audio + webcam",
+    "label": "Mit Systemton + Mikrofon + Webcam"
+  },
+  "trigger.transcode": {
+    "en": "Transcode",
+    "label": "Konvertieren"
+  },
+  "trigger.share": {
+    "en": "Share",
+    "label": "Teilen"
+  },
+  "trigger.toggle": {
+    "en": "Toggle",
+    "label": "An/Aus"
+  },
+  "trigger.hardware": {
+    "en": "Hardware",
+    "label": "Hardware"
+  },
+  "trigger.tests": {
+    "en": "Speed Test",
+    "label": "Speedtest"
+  },
+  "trigger.hardware.laptop-display": {
+    "en": "Laptop Display",
+    "label": "Laptop-Bildschirm"
+  },
+  "trigger.hardware.mirror-display": {
+    "en": "Mirror Display",
+    "label": "Bildschirm spiegeln"
+  },
+  "trigger.hardware.hybrid-gpu": {
+    "en": "Hybrid GPU",
+    "label": "Hybrid-GPU"
+  },
+  "trigger.hardware.touchpad": {
+    "en": "Touchpad",
+    "label": "Touchpad"
+  },
+  "trigger.hardware.touchpad-haptics": {
+    "en": "Touchpad Haptics",
+    "label": "Touchpad-Haptik"
+  },
+  "trigger.hardware.touchpad-haptics.low": {
+    "en": "low",
+    "label": "niedrig"
+  },
+  "trigger.hardware.touchpad-haptics.mid": {
+    "en": "mid",
+    "label": "mittel"
+  },
+  "trigger.hardware.touchpad-haptics.high": {
+    "en": "high",
+    "label": "hoch"
+  },
+  "trigger.hardware.touchscreen": {
+    "en": "Touchscreen",
+    "label": "Touchscreen"
+  },
+  "trigger.reminder.set": {
+    "en": "Set one",
+    "label": "Erstellen"
+  },
+  "trigger.reminder.show": {
+    "en": "Show all",
+    "label": "Alle anzeigen"
+  },
+  "trigger.reminder.clear": {
+    "en": "Clear all",
+    "label": "Alle löschen"
+  },
+  "trigger.share.clipboard": {
+    "en": "Clipboard",
+    "label": "Zwischenablage"
+  },
+  "trigger.share.file": {
+    "en": "File",
+    "label": "Datei"
+  },
+  "trigger.share.folder": {
+    "en": "Folder",
+    "label": "Ordner"
+  },
+  "trigger.share.receive": {
+    "en": "Receive",
+    "label": "Empfangen"
+  },
+  "trigger.toggle.idle-lock": {
+    "en": "Stay Awake",
+    "label": "Wach bleiben"
+  },
+  "trigger.toggle.notifications": {
+    "en": "Notifications",
+    "label": "Benachrichtigungen"
+  },
+  "trigger.toggle.crash-capture": {
+    "en": "Crash Capture",
+    "label": "Absturzmeldungen"
+  },
+  "trigger.toggle.screensaver": {
+    "en": "Screensaver",
+    "label": "Bildschirmschoner"
+  },
+  "trigger.toggle.nightlight": {
+    "en": "Nightlight",
+    "label": "Nachtlicht"
+  },
+  "trigger.toggle.top-bar": {
+    "en": "Menu Bar",
+    "label": "Menüleiste"
+  },
+  "trigger.toggle.battery-percentage": {
+    "en": "Battery Percentage",
+    "label": "Akku in Prozent"
+  },
+  "trigger.toggle.workspace-layout": {
+    "en": "Workspace Layout",
+    "label": "Arbeitsflächen-Layout"
+  },
+  "trigger.toggle.window-gaps": {
+    "en": "Window Gaps",
+    "label": "Fensterabstände"
+  },
+  "trigger.toggle.one-window-ratio": {
+    "en": "1-Window Ratio",
+    "label": "Einzelfenster-Format"
+  },
+  "trigger.tests.network-speedtest": {
+    "en": "Network Speed Test",
+    "label": "Netzwerk-Speedtest"
+  },
+  "trigger.tests.disk-speedtest": {
+    "en": "Disk Speed Test",
+    "label": "Datenträger-Speedtest"
+  },
+  "style.theme": {
+    "en": "Theme",
+    "label": "Theme"
+  },
+  "style.background": {
+    "en": "Background",
+    "label": "Hintergrund"
+  },
+  "style.unlock": {
+    "en": "Unlock",
+    "label": "Entsperrbildschirm"
+  },
+  "style.font": {
+    "en": "Font",
+    "label": "Schriftart"
+  },
+  "style.bar": {
+    "en": "Menu Bar",
+    "label": "Menüleiste"
+  },
+  "style.bar.position": {
+    "en": "Position",
+    "label": "Position"
+  },
+  "style.bar.transparency": {
+    "en": "Transparency",
+    "label": "Transparenz"
+  },
+  "style.hyprland": {
+    "en": "Hyprland",
+    "label": "Hyprland"
+  },
+  "style.screensaver": {
+    "en": "Screensaver",
+    "label": "Bildschirmschoner"
+  },
+  "style.about": {
+    "en": "About",
+    "label": "Info"
+  },
+  "style.bar.position.top": {
+    "en": "Top",
+    "label": "Oben"
+  },
+  "style.bar.position.bottom": {
+    "en": "Bottom",
+    "label": "Unten"
+  },
+  "style.bar.position.left": {
+    "en": "Left",
+    "label": "Links"
+  },
+  "style.bar.position.right": {
+    "en": "Right",
+    "label": "Rechts"
+  },
+  "style.about.text": {
+    "en": "Edit Text",
+    "label": "Text bearbeiten"
+  },
+  "style.about.image": {
+    "en": "Set From Image",
+    "label": "Aus Bild erstellen"
+  },
+  "style.about.default": {
+    "en": "Restore Default",
+    "label": "Standard wiederherstellen"
+  },
+  "style.screensaver.text": {
+    "en": "Edit Text",
+    "label": "Text bearbeiten"
+  },
+  "style.screensaver.image": {
+    "en": "Set From Image",
+    "label": "Aus Bild erstellen"
+  },
+  "style.screensaver.default": {
+    "en": "Restore Default",
+    "label": "Standard wiederherstellen"
+  },
+  "setup.monitors": {
+    "en": "Monitors",
+    "label": "Bildschirme"
+  },
+  "setup.keybindings": {
+    "en": "Keybindings",
+    "label": "Tastenkürzel"
+  },
+  "setup.input": {
+    "en": "Input",
+    "label": "Eingabegeräte"
+  },
+  "setup.network": {
+    "en": "Network",
+    "label": "Netzwerk"
+  },
+  "setup.network.dns": {
+    "en": "DNS",
+    "label": "DNS"
+  },
+  "setup.network.dns.dhcp": {
+    "en": "DHCP",
+    "label": "DHCP"
+  },
+  "setup.network.dns.cloudflare": {
+    "en": "Cloudflare",
+    "label": "Cloudflare"
+  },
+  "setup.network.dns.google": {
+    "en": "Google",
+    "label": "Google"
+  },
+  "setup.network.dns.custom": {
+    "en": "Custom",
+    "label": "Eigener"
+  },
+  "setup.network.qr": {
+    "en": "QR Code",
+    "label": "QR-Code"
+  },
+  "setup.default": {
+    "en": "Defaults",
+    "label": "Standard-Apps"
+  },
+  "setup.default.agent": {
+    "en": "Agent",
+    "label": "Agent",
+    "title_en": "Default Agent",
+    "title": "Standard-Agent"
+  },
+  "setup.default.agent.claude": {
+    "en": "Claude",
+    "label": "Claude"
+  },
+  "setup.default.agent.codex": {
+    "en": "Codex",
+    "label": "Codex"
+  },
+  "setup.default.agent.copilot": {
+    "en": "Copilot",
+    "label": "Copilot"
+  },
+  "setup.default.agent.crush": {
+    "en": "Crush",
+    "label": "Crush"
+  },
+  "setup.default.agent.cursor-agent": {
+    "en": "Cursor CLI",
+    "label": "Cursor CLI"
+  },
+  "setup.default.agent.gemini": {
+    "en": "Gemini",
+    "label": "Gemini"
+  },
+  "setup.default.agent.grok": {
+    "en": "Grok",
+    "label": "Grok"
+  },
+  "setup.default.agent.hermes": {
+    "en": "Hermes",
+    "label": "Hermes"
+  },
+  "setup.default.agent.muse": {
+    "en": "Muse Code",
+    "label": "Muse Code"
+  },
+  "setup.default.agent.omp": {
+    "en": "omp",
+    "label": "omp"
+  },
+  "setup.default.agent.openclaw": {
+    "en": "OpenClaw",
+    "label": "OpenClaw"
+  },
+  "setup.default.agent.opencode": {
+    "en": "OpenCode",
+    "label": "OpenCode"
+  },
+  "setup.default.agent.pi": {
+    "en": "Pi",
+    "label": "Pi"
+  },
+  "setup.default.browser": {
+    "en": "Browser",
+    "label": "Browser",
+    "title_en": "Default Browser",
+    "title": "Standard-Browser"
+  },
+  "setup.default.browser.chromium": {
+    "en": "Chromium",
+    "label": "Chromium"
+  },
+  "setup.default.browser.chrome": {
+    "en": "Chrome",
+    "label": "Chrome"
+  },
+  "setup.default.browser.brave": {
+    "en": "Brave",
+    "label": "Brave"
+  },
+  "setup.default.browser.brave-origin": {
+    "en": "Brave Origin",
+    "label": "Brave Origin"
+  },
+  "setup.default.browser.edge": {
+    "en": "Edge",
+    "label": "Edge"
+  },
+  "setup.default.browser.firefox": {
+    "en": "Firefox",
+    "label": "Firefox"
+  },
+  "setup.default.browser.zen": {
+    "en": "Zen",
+    "label": "Zen"
+  },
+  "setup.default.terminal": {
+    "en": "Terminal",
+    "label": "Terminal",
+    "title_en": "Default Terminal",
+    "title": "Standard-Terminal"
+  },
+  "setup.default.terminal.alacritty": {
+    "en": "Alacritty",
+    "label": "Alacritty"
+  },
+  "setup.default.terminal.foot": {
+    "en": "Foot",
+    "label": "Foot"
+  },
+  "setup.default.terminal.ghostty": {
+    "en": "Ghostty",
+    "label": "Ghostty"
+  },
+  "setup.default.terminal.kitty": {
+    "en": "Kitty",
+    "label": "Kitty"
+  },
+  "setup.default.editor": {
+    "en": "Editor",
+    "label": "Editor",
+    "title_en": "Default Editor",
+    "title": "Standard-Editor"
+  },
+  "setup.default.editor.neovim": {
+    "en": "Neovim",
+    "label": "Neovim"
+  },
+  "setup.default.editor.vscode": {
+    "en": "VSCode",
+    "label": "VSCode"
+  },
+  "setup.default.editor.cursor": {
+    "en": "Cursor",
+    "label": "Cursor"
+  },
+  "setup.default.editor.zed": {
+    "en": "Zed",
+    "label": "Zed"
+  },
+  "setup.default.editor.sublime": {
+    "en": "Sublime Text",
+    "label": "Sublime Text"
+  },
+  "setup.default.editor.helix": {
+    "en": "Helix",
+    "label": "Helix"
+  },
+  "setup.default.editor.vim": {
+    "en": "Vim",
+    "label": "Vim"
+  },
+  "setup.default.editor.emacs": {
+    "en": "Emacs",
+    "label": "Emacs"
+  },
+  "setup.plugin": {
+    "en": "Plugins",
+    "label": "Plugins"
+  },
+  "setup.plugin.enable": {
+    "en": "Enable Plugin",
+    "label": "Plugin aktivieren"
+  },
+  "setup.plugin.disable": {
+    "en": "Disable Plugin",
+    "label": "Plugin deaktivieren"
+  },
+  "setup.plugin.add": {
+    "en": "Add Plugin",
+    "label": "Plugin hinzufügen"
+  },
+  "setup.plugin.clone": {
+    "en": "Clone Plugin",
+    "label": "Plugin klonen"
+  },
+  "setup.plugin.remove": {
+    "en": "Remove Plugin",
+    "label": "Plugin entfernen"
+  },
+  "setup.security": {
+    "en": "Security",
+    "label": "Sicherheit"
+  },
+  "setup.config": {
+    "en": "Config",
+    "label": "Konfiguration"
+  },
+  "setup.security.fingerprint": {
+    "en": "Fingerprint",
+    "label": "Fingerabdruck"
+  },
+  "setup.security.fido2": {
+    "en": "Fido2",
+    "label": "Fido2"
+  },
+  "setup.security.sshd": {
+    "en": "SSHD",
+    "label": "SSHD"
+  },
+  "setup.security.passwordless-sudo": {
+    "en": "Passwordless Sudo",
+    "label": "Sudo ohne Passwort"
+  },
+  "setup.security.sudoless-docker": {
+    "en": "Sudoless Docker",
+    "label": "Docker ohne Sudo"
+  },
+  "setup.config.hyprland": {
+    "en": "Hyprland",
+    "label": "Hyprland"
+  },
+  "setup.config.hyprsunset": {
+    "en": "Hyprsunset",
+    "label": "Hyprsunset"
+  },
+  "setup.config.xcompose": {
+    "en": "XCompose",
+    "label": "XCompose"
+  },
+  "setup.direct-boot": {
+    "en": "Direct Boot",
+    "label": "Direktstart"
+  },
+  "setup.reset": {
+    "en": "Reset Computer",
+    "label": "Computer zurücksetzen"
+  },
+  "install.package": {
+    "en": "Package",
+    "label": "Paket"
+  },
+  "install.aur": {
+    "en": "AUR",
+    "label": "AUR"
+  },
+  "install.webapp": {
+    "en": "Web App",
+    "label": "Web-App"
+  },
+  "install.tui": {
+    "en": "TUI",
+    "label": "TUI"
+  },
+  "install.style": {
+    "en": "Style",
+    "label": "Stil"
+  },
+  "install.style.theme": {
+    "en": "Theme",
+    "label": "Theme"
+  },
+  "install.style.background": {
+    "en": "Background",
+    "label": "Hintergrund"
+  },
+  "install.style.font": {
+    "en": "Font",
+    "label": "Schriftart"
+  },
+  "install.style.font.cascadia": {
+    "en": "Cascadia Mono",
+    "label": "Cascadia Mono"
+  },
+  "install.style.font.meslo": {
+    "en": "Meslo LG Mono",
+    "label": "Meslo LG Mono"
+  },
+  "install.style.font.fira": {
+    "en": "Fira Code",
+    "label": "Fira Code"
+  },
+  "install.style.font.victor": {
+    "en": "Victor Code",
+    "label": "Victor Code"
+  },
+  "install.style.font.bitstream": {
+    "en": "Bitstream Vera Mono",
+    "label": "Bitstream Vera Mono"
+  },
+  "install.style.font.iosevka": {
+    "en": "Iosevka",
+    "label": "Iosevka"
+  },
+  "install.service": {
+    "en": "Service",
+    "label": "Dienst"
+  },
+  "install.development": {
+    "en": "Development",
+    "label": "Entwicklung"
+  },
+  "install.editor": {
+    "en": "Editor",
+    "label": "Editor"
+  },
+  "install.terminal": {
+    "en": "Terminal",
+    "label": "Terminal"
+  },
+  "install.browser": {
+    "en": "Browser",
+    "label": "Browser"
+  },
+  "install.ai": {
+    "en": "AI",
+    "label": "KI"
+  },
+  "install.gaming": {
+    "en": "Gaming",
+    "label": "Spiele"
+  },
+  "install.windows": {
+    "en": "Windows",
+    "label": "Windows"
+  },
+  "install.preinstalls": {
+    "en": "Preinstalls",
+    "label": "Vorinstallierte Apps"
+  },
+  "install.browser.chrome": {
+    "en": "Chrome",
+    "label": "Chrome"
+  },
+  "install.browser.edge": {
+    "en": "Edge",
+    "label": "Edge"
+  },
+  "install.browser.brave": {
+    "en": "Brave",
+    "label": "Brave"
+  },
+  "install.browser.brave-origin": {
+    "en": "Brave Origin",
+    "label": "Brave Origin"
+  },
+  "install.browser.firefox": {
+    "en": "Firefox",
+    "label": "Firefox"
+  },
+  "install.browser.zen": {
+    "en": "Zen",
+    "label": "Zen"
+  },
+  "install.service.1password": {
+    "en": "1Password",
+    "label": "1Password"
+  },
+  "install.service.dropbox": {
+    "en": "Dropbox",
+    "label": "Dropbox"
+  },
+  "install.service.spotify": {
+    "en": "Spotify",
+    "label": "Spotify"
+  },
+  "install.service.signal": {
+    "en": "Signal",
+    "label": "Signal"
+  },
+  "install.service.tailscale": {
+    "en": "Tailscale",
+    "label": "Tailscale"
+  },
+  "install.service.nordvpn": {
+    "en": "NordVPN",
+    "label": "NordVPN"
+  },
+  "install.service.once": {
+    "en": "ONCE",
+    "label": "ONCE"
+  },
+  "install.service.bitwarden": {
+    "en": "Bitwarden",
+    "label": "Bitwarden"
+  },
+  "install.service.chromium-account": {
+    "en": "Chromium Account",
+    "label": "Chromium-Konto"
+  },
+  "install.editor.vscode": {
+    "en": "VSCode",
+    "label": "VSCode"
+  },
+  "install.editor.cursor": {
+    "en": "Cursor",
+    "label": "Cursor"
+  },
+  "install.editor.zed": {
+    "en": "Zed",
+    "label": "Zed"
+  },
+  "install.editor.sublime": {
+    "en": "Sublime Text",
+    "label": "Sublime Text"
+  },
+  "install.editor.helix": {
+    "en": "Helix",
+    "label": "Helix"
+  },
+  "install.editor.vim": {
+    "en": "Vim",
+    "label": "Vim"
+  },
+  "install.editor.emacs": {
+    "en": "Emacs",
+    "label": "Emacs"
+  },
+  "install.terminal.alacritty": {
+    "en": "Alacritty",
+    "label": "Alacritty"
+  },
+  "install.terminal.foot": {
+    "en": "Foot",
+    "label": "Foot"
+  },
+  "install.terminal.ghostty": {
+    "en": "Ghostty",
+    "label": "Ghostty"
+  },
+  "install.terminal.kitty": {
+    "en": "Kitty",
+    "label": "Kitty"
+  },
+  "install.ai.chatgpt": {
+    "en": "ChatGPT Desktop",
+    "label": "ChatGPT Desktop"
+  },
+  "install.ai.dictation": {
+    "en": "Dictation",
+    "label": "Diktieren"
+  },
+  "install.ai.grok-bot": {
+    "en": "Grok Bot",
+    "label": "Grok Bot"
+  },
+  "install.ai.lm-studio": {
+    "en": "LM Studio",
+    "label": "LM Studio"
+  },
+  "install.ai.ollama": {
+    "en": "Ollama",
+    "label": "Ollama"
+  },
+  "install.ai.t3-code": {
+    "en": "T3 Code",
+    "label": "T3 Code"
+  },
+  "install.ai.hermes": {
+    "en": "Hermes Desktop",
+    "label": "Hermes Desktop"
+  },
+  "install.ai.openclaw": {
+    "en": "OpenClaw",
+    "label": "OpenClaw"
+  },
+  "install.ai.perplexity": {
+    "en": "Perplexity",
+    "label": "Perplexity"
+  },
+  "install.gaming.steam": {
+    "en": "Steam",
+    "label": "Steam"
+  },
+  "install.gaming.retroarch": {
+    "en": "RetroArch",
+    "label": "RetroArch"
+  },
+  "install.gaming.minecraft": {
+    "en": "Minecraft",
+    "label": "Minecraft"
+  },
+  "install.gaming.geforce-now": {
+    "en": "NVIDIA GeForce NOW",
+    "label": "NVIDIA GeForce NOW"
+  },
+  "install.gaming.xbox-cloud": {
+    "en": "Xbox Cloud Gaming",
+    "label": "Xbox Cloud Gaming"
+  },
+  "install.gaming.xbox-controllers": {
+    "en": "Xbox Controllers",
+    "label": "Xbox-Controller"
+  },
+  "install.gaming.battlenet": {
+    "en": "Battle.net",
+    "label": "Battle.net"
+  },
+  "install.gaming.lutris": {
+    "en": "Lutris",
+    "label": "Lutris"
+  },
+  "install.gaming.heroic": {
+    "en": "Heroic (Epic Games)",
+    "label": "Heroic (Epic Games)"
+  },
+  "install.gaming.retro-launcher": {
+    "en": "RetroArch Game Launcher",
+    "label": "RetroArch-Spielstarter"
+  },
+  "install.development.rails": {
+    "en": "Ruby on Rails",
+    "label": "Ruby on Rails"
+  },
+  "install.development.docker-dbs": {
+    "en": "Docker DB",
+    "label": "Docker-Datenbanken"
+  },
+  "install.development.javascript": {
+    "en": "JavaScript",
+    "label": "JavaScript"
+  },
+  "install.development.go": {
+    "en": "Go",
+    "label": "Go"
+  },
+  "install.development.php": {
+    "en": "PHP",
+    "label": "PHP"
+  },
+  "install.development.python": {
+    "en": "Python",
+    "label": "Python"
+  },
+  "install.development.elixir": {
+    "en": "Elixir",
+    "label": "Elixir"
+  },
+  "install.development.zig": {
+    "en": "Zig",
+    "label": "Zig"
+  },
+  "install.development.rust": {
+    "en": "Rust",
+    "label": "Rust"
+  },
+  "install.development.java": {
+    "en": "Java",
+    "label": "Java"
+  },
+  "install.development.dotnet": {
+    "en": ".NET",
+    "label": ".NET"
+  },
+  "install.development.ocaml": {
+    "en": "OCaml",
+    "label": "OCaml"
+  },
+  "install.development.clojure": {
+    "en": "Clojure",
+    "label": "Clojure"
+  },
+  "install.development.scala": {
+    "en": "Scala",
+    "label": "Scala"
+  },
+  "install.development.javascript.node": {
+    "en": "Node.js",
+    "label": "Node.js"
+  },
+  "install.development.javascript.bun": {
+    "en": "Bun",
+    "label": "Bun"
+  },
+  "install.development.javascript.deno": {
+    "en": "Deno",
+    "label": "Deno"
+  },
+  "install.development.php.php": {
+    "en": "PHP",
+    "label": "PHP"
+  },
+  "install.development.php.laravel": {
+    "en": "Laravel",
+    "label": "Laravel"
+  },
+  "install.development.php.symfony": {
+    "en": "Symfony",
+    "label": "Symfony"
+  },
+  "install.development.elixir.elixir": {
+    "en": "Elixir",
+    "label": "Elixir"
+  },
+  "install.development.elixir.phoenix": {
+    "en": "Phoenix",
+    "label": "Phoenix"
+  },
+  "remove.package": {
+    "en": "Package",
+    "label": "Paket"
+  },
+  "remove.webapp": {
+    "en": "Web App",
+    "label": "Web-App"
+  },
+  "remove.tui": {
+    "en": "TUI",
+    "label": "TUI"
+  },
+  "remove.development": {
+    "en": "Development",
+    "label": "Entwicklung",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.theme": {
+    "en": "Theme",
+    "label": "Theme"
+  },
+  "remove.browser": {
+    "en": "Browser",
+    "label": "Browser",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.dictation": {
+    "en": "Dictation",
+    "label": "Diktieren"
+  },
+  "remove.gaming": {
+    "en": "Gaming",
+    "label": "Spiele",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.service": {
+    "en": "Services",
+    "label": "Dienste",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.windows": {
+    "en": "Windows",
+    "label": "Windows"
+  },
+  "remove.preinstalls": {
+    "en": "Preinstalls",
+    "label": "Vorinstallierte Apps"
+  },
+  "remove.security": {
+    "en": "Security",
+    "label": "Sicherheit",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.security.fingerprint": {
+    "en": "Fingerprint",
+    "label": "Fingerabdruck"
+  },
+  "remove.security.fido2": {
+    "en": "Fido2",
+    "label": "Fido2"
+  },
+  "remove.security.sshd": {
+    "en": "SSHD",
+    "label": "SSHD"
+  },
+  "remove.security.sudoless-docker": {
+    "en": "Sudoless Docker",
+    "label": "Docker ohne Sudo"
+  },
+  "remove.ai.hermes": {
+    "en": "Hermes Desktop",
+    "label": "Hermes Desktop"
+  },
+  "remove.browser.chrome": {
+    "en": "Chrome",
+    "label": "Chrome"
+  },
+  "remove.browser.edge": {
+    "en": "Edge",
+    "label": "Edge"
+  },
+  "remove.browser.brave": {
+    "en": "Brave",
+    "label": "Brave"
+  },
+  "remove.browser.brave-origin": {
+    "en": "Brave Origin",
+    "label": "Brave Origin"
+  },
+  "remove.browser.firefox": {
+    "en": "Firefox",
+    "label": "Firefox"
+  },
+  "remove.browser.zen": {
+    "en": "Zen",
+    "label": "Zen"
+  },
+  "remove.service.dropbox": {
+    "en": "Dropbox",
+    "label": "Dropbox"
+  },
+  "remove.service.tailscale": {
+    "en": "Tailscale",
+    "label": "Tailscale"
+  },
+  "remove.gaming.steam": {
+    "en": "Steam",
+    "label": "Steam"
+  },
+  "remove.gaming.retroarch": {
+    "en": "RetroArch",
+    "label": "RetroArch"
+  },
+  "remove.gaming.minecraft": {
+    "en": "Minecraft",
+    "label": "Minecraft"
+  },
+  "remove.gaming.geforce-now": {
+    "en": "NVIDIA GeForce NOW",
+    "label": "NVIDIA GeForce NOW"
+  },
+  "remove.gaming.xbox-cloud": {
+    "en": "Xbox Cloud Gaming",
+    "label": "Xbox Cloud Gaming"
+  },
+  "remove.gaming.xbox-controllers": {
+    "en": "Xbox Controllers (󰂯)",
+    "label": "Xbox-Controller (󰂯)"
+  },
+  "remove.gaming.battlenet": {
+    "en": "Battle.net",
+    "label": "Battle.net"
+  },
+  "remove.gaming.lutris": {
+    "en": "Lutris",
+    "label": "Lutris"
+  },
+  "remove.gaming.heroic": {
+    "en": "Heroic (Epic Games)",
+    "label": "Heroic (Epic Games)"
+  },
+  "remove.development.rails": {
+    "en": "Ruby on Rails",
+    "label": "Ruby on Rails"
+  },
+  "remove.development.javascript": {
+    "en": "JavaScript",
+    "label": "JavaScript",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.development.go": {
+    "en": "Go",
+    "label": "Go"
+  },
+  "remove.development.php": {
+    "en": "PHP",
+    "label": "PHP",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.development.python": {
+    "en": "Python",
+    "label": "Python"
+  },
+  "remove.development.elixir": {
+    "en": "Elixir",
+    "label": "Elixir",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.development.zig": {
+    "en": "Zig",
+    "label": "Zig"
+  },
+  "remove.development.rust": {
+    "en": "Rust",
+    "label": "Rust"
+  },
+  "remove.development.java": {
+    "en": "Java",
+    "label": "Java"
+  },
+  "remove.development.dotnet": {
+    "en": ".NET",
+    "label": ".NET"
+  },
+  "remove.development.ocaml": {
+    "en": "OCaml",
+    "label": "OCaml"
+  },
+  "remove.development.clojure": {
+    "en": "Clojure",
+    "label": "Clojure"
+  },
+  "remove.development.scala": {
+    "en": "Scala",
+    "label": "Scala"
+  },
+  "remove.development.javascript.node": {
+    "en": "Node.js",
+    "label": "Node.js"
+  },
+  "remove.development.javascript.bun": {
+    "en": "Bun",
+    "label": "Bun"
+  },
+  "remove.development.javascript.deno": {
+    "en": "Deno",
+    "label": "Deno"
+  },
+  "remove.development.php.php": {
+    "en": "PHP",
+    "label": "PHP"
+  },
+  "remove.development.php.laravel": {
+    "en": "Laravel",
+    "label": "Laravel"
+  },
+  "remove.development.php.symfony": {
+    "en": "Symfony",
+    "label": "Symfony"
+  },
+  "remove.development.elixir.elixir": {
+    "en": "Elixir",
+    "label": "Elixir"
+  },
+  "remove.development.elixir.phoenix": {
+    "en": "Phoenix",
+    "label": "Phoenix"
+  },
+  "remove.ai": {
+    "en": "AI",
+    "label": "KI",
+    "title_en": "Remove",
+    "title": "Entfernen"
+  },
+  "remove.ai.t3-code": {
+    "en": "T3 Code",
+    "label": "T3 Code"
+  },
+  "remove.ai.openclaw": {
+    "en": "OpenClaw",
+    "label": "OpenClaw"
+  },
+  "remove.ai.perplexity": {
+    "en": "Perplexity",
+    "label": "Perplexity"
+  },
+  "update.omarchy": {
+    "en": "Omarchy",
+    "label": "Omarchy"
+  },
+  "update.channel": {
+    "en": "Channel",
+    "label": "Kanal"
+  },
+  "update.config": {
+    "en": "Config",
+    "label": "Konfiguration",
+    "title_en": "Reset to default",
+    "title": "Auf Standard zurücksetzen"
+  },
+  "update.themes": {
+    "en": "Extra Themes",
+    "label": "Weitere Themes"
+  },
+  "update.process": {
+    "en": "Process",
+    "label": "Prozess",
+    "title_en": "Restart",
+    "title": "Neu starten"
+  },
+  "update.hardware": {
+    "en": "Hardware",
+    "label": "Hardware",
+    "title_en": "Restart",
+    "title": "Neu starten"
+  },
+  "update.firmware": {
+    "en": "Firmware",
+    "label": "Firmware"
+  },
+  "update.password": {
+    "en": "Password",
+    "label": "Passwort"
+  },
+  "update.timezone": {
+    "en": "Timezone",
+    "label": "Zeitzone"
+  },
+  "update.time": {
+    "en": "Time",
+    "label": "Uhrzeit"
+  },
+  "update.channel.stable": {
+    "en": "Stable",
+    "label": "Stabil"
+  },
+  "update.channel.rc": {
+    "en": "RC",
+    "label": "RC"
+  },
+  "update.channel.edge": {
+    "en": "Edge",
+    "label": "Edge"
+  },
+  "update.channel.dev": {
+    "en": "Dev",
+    "label": "Dev"
+  },
+  "update.process.hyprsunset": {
+    "en": "Hyprsunset",
+    "label": "Hyprsunset"
+  },
+  "update.process.shell": {
+    "en": "Shell",
+    "label": "Shell"
+  },
+  "update.config.hyprland": {
+    "en": "Hyprland",
+    "label": "Hyprland"
+  },
+  "update.config.hyprsunset": {
+    "en": "Hyprsunset",
+    "label": "Hyprsunset"
+  },
+  "update.config.plymouth": {
+    "en": "Plymouth",
+    "label": "Plymouth"
+  },
+  "update.config.tmux": {
+    "en": "Tmux",
+    "label": "Tmux"
+  },
+  "update.config.shell": {
+    "en": "Shell",
+    "label": "Shell"
+  },
+  "update.hardware.audio": {
+    "en": "Audio",
+    "label": "Audio"
+  },
+  "update.hardware.wifi": {
+    "en": "Wi-Fi",
+    "label": "WLAN"
+  },
+  "update.hardware.bluetooth": {
+    "en": "Bluetooth",
+    "label": "Bluetooth"
+  },
+  "update.hardware.trackpad": {
+    "en": "Trackpad",
+    "label": "Touchpad"
+  },
+  "update.password.drive": {
+    "en": "Drive Encryption",
+    "label": "Verschlüsselung"
+  },
+  "update.password.user": {
+    "en": "User",
+    "label": "Benutzer"
+  }
+}

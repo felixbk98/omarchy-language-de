@@ -1,0 +1,28 @@
+{
+  "source": "omarchy.system-update",
+  "id": "de.system-update",
+  "name": "Systemupdate",
+  "replace": [
+    {
+      "file": "SystemUpdate.qml",
+      "find": "tooltipText: \"Pending Omarchy Updates\"",
+      "replace": "tooltipText: \"Omarchy-Updates verfügbar\"",
+      "count": 1
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Indicates available Omarchy updates\"",
+      "replace": "\"description\": \"Zeigt verfügbare Omarchy-Updates an\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "omarchy-launch-floating-terminal-with-presentation omarchy-update",
+    "refresh",
+    "clear",
+    "omarchy-update-available",
+    "\\uf021",
+    "Omarchy update",
+    "System"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "Disk Usage.desktop": {
+    "Name": [
+      "Disk Usage",
+      "Speicherbelegung"
+    ]
+  },
+  "imv.desktop": {
+    "Name": [
+      "Image Viewer",
+      "Bildbetrachter"
+    ]
+  },
+  "mpv.desktop": {
+    "Name": [
+      "Media Player",
+      "Mediaplayer"
+    ],
+    "GenericName": [
+      "Multimedia player",
+      "Multimedia-Player"
+    ]
+  },
+  "foot.desktop": {
+    "Comment": [
+      "A fast, lightweight and minimalistic Wayland terminal emulator",
+      "Schnelles, schlankes Terminal für Wayland"
+    ]
+  },
+  "Google Contacts.desktop": {
+    "Name": [
+      "Google Contacts",
+      "Google Kontakte"
+    ]
+  },
+  "Google Photos.desktop": {
+    "Name": [
+      "Google Photos",
+      "Google Fotos"
+    ]
+  }
+}

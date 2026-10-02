@@ -1,0 +1,6 @@
+#!/bin/bash
+# omarchy-language-de: translate the freshly updated Omarchy. Runs before the
+# update restarts the shell, so the shell is not restarted here.
+tool="$HOME/.local/share/omarchy-language-de/bin/omarchy-language-de"
+[[ -x $tool ]] && "$tool" apply --no-restart >/dev/null
+exit 0

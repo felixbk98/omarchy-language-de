@@ -1,0 +1,79 @@
+{
+  "source": "omarchy.clipboard",
+  "id": "de.clipboard",
+  "name": "Zwischenablage",
+  "replace": [
+    {
+      "file": "Clipboard.qml",
+      "find": "message: \"Delete entire clipboard history?\"\n          confirmText: \"Delete\"",
+      "replace": "message: \"Gesamten Verlauf der Zwischenablage löschen?\"\n          confirmText: \"Löschen\"\n          cancelText: \"Abbrechen\""
+    },
+    {
+      "file": "Clipboard.qml",
+      "find": "text: root.filterText || \"Search clipboard…\"",
+      "replace": "text: root.filterText || \"Zwischenablage durchsuchen…\""
+    },
+    {
+      "file": "Clipboard.qml",
+      "find": "? \"Clipboard is empty\" : \"No matches for “\" + root.filterText + \"”\"",
+      "replace": "? \"Zwischenablage ist leer\" : \"Keine Treffer für „\" + root.filterText + \"“\""
+    },
+    {
+      "file": "ClipboardHistory.js",
+      "find": "return paths.length + \" files\"",
+      "replace": "return paths.length + \" Dateien\""
+    },
+    {
+      "file": "ClipboardHistory.js",
+      "find": "if (!timestamp) return \"Image\"",
+      "replace": "if (!timestamp) return \"Bild\""
+    },
+    {
+      "file": "ClipboardHistory.js",
+      "find": "=== \"image/png\" ? \"Screenshot\" : \"Image\"",
+      "replace": "=== \"image/png\" ? \"Screenshot\" : \"Bild\""
+    },
+    {
+      "file": "ClipboardHistory.js",
+      "find": "return label + \" from \" + timestamp",
+      "replace": "return label + \" vom \" + timestamp"
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"A clipboard manager to view and paste history\"",
+      "replace": "\"description\": \"Verlauf der Zwischenablage ansehen und einfügen\""
+    }
+  ],
+  "ignore": [
+    "OMARCHY_PATH",
+    "HOME",
+    "menu",
+    "border",
+    "image",
+    "--shift-insert",
+    "--history-index",
+    "--copy-only",
+    "pkill",
+    "wl-paste .*--watch .*/shell/plugins/clipboard/capture\\\\.sh",
+    "setpriv",
+    "--pdeathsig",
+    "TERM",
+    "wl-paste",
+    "--type",
+    "text",
+    "--watch",
+    "image/png",
+    "transparent",
+    "omarchy-clipboard",
+    "file",
+    "string",
+    "object",
+    "image:",
+    "text:",
+    "image screenshot ",
+    "file://",
+    "localhost/",
+    "text/plain",
+    "undefined"
+  ]
+}

@@ -1,0 +1,286 @@
+[
+  [
+    "Reminder set for 1 minutes",
+    "Erinnerung in 1 Minute"
+  ],
+  [
+    "Reminder set for 15 minutes",
+    "Erinnerung in 15 Minuten"
+  ],
+  [
+    "You'll be reminded at 14:05",
+    "Sie werden um 14:05 Uhr erinnert"
+  ],
+  [
+    "Your 1 minutes are up",
+    "1 Minute ist um"
+  ],
+  [
+    "Your 30 minutes are up",
+    "30 Minuten sind um"
+  ],
+  [
+    "5-min reminder in 4m 59s (14:30)",
+    "5-Minuten-Erinnerung in 4 Min. 59 Sek. (14:30)"
+  ],
+  [
+    "10-min reminder in 9m (9:41)",
+    "10-Minuten-Erinnerung in 9 Min. (9:41)"
+  ],
+  [
+    "1-min reminder in 42s (9:41)",
+    "1-Minuten-Erinnerung in 42 Sek. (9:41)"
+  ],
+  [
+    "Check the oven in 12m 3s (18:20)",
+    "Check the oven in 12 Min. 3 Sek. (18:20)"
+  ],
+  [
+    "Tee ziehen lassen in 2m (18:20)",
+    "Tee ziehen lassen in 2 Min. (18:20)"
+  ],
+  [
+    "Stretch in 30s (18:20)",
+    "Stretch in 30 Sek. (18:20)"
+  ],
+  [
+    "Tee in 1 minutes",
+    "Tee in 1 Minute"
+  ],
+  [
+    "Check the oven in 30 minutes",
+    "Check the oven in 30 Minuten"
+  ],
+  [
+    "Upcoming reminders",
+    "Anstehende Erinnerungen"
+  ],
+  [
+    "Reminder",
+    "Erinnerung"
+  ],
+  [
+    "Battery is down to 9%",
+    "Akku nur noch bei 9%"
+  ],
+  [
+    "Battery 80%  ·  Holding at 80%  ·  0.1W / 57Wh",
+    "Akku 80%  ·  Ladegrenze 80%  ·  0.1W / 57Wh"
+  ],
+  [
+    "Battery 78%  ·  Holding at 75-80%  ·  0W / 57Wh",
+    "Akku 78%  ·  Ladegrenze 75-80%  ·  0W / 57Wh"
+  ],
+  [
+    "Battery 42%  ·  1h 20m to full  ·   45.2W / 57Wh",
+    "Akku 42%  ·  voll in 1 Std. 20 Min.  ·   45.2W / 57Wh"
+  ],
+  [
+    "Battery 42%  ·  2h to full  ·   20W / 57Wh",
+    "Akku 42%  ·  voll in 2 Std.  ·   20W / 57Wh"
+  ],
+  [
+    "Battery 95%  ·  12m to full  ·   8.5W / 57Wh",
+    "Akku 95%  ·  voll in 12 Min.  ·   8.5W / 57Wh"
+  ],
+  [
+    "Battery 63%  ·  4h 5m left  ·   7.9W / 57Wh",
+    "Akku 63%  ·  noch 4 Std. 5 Min.  ·   7.9W / 57Wh"
+  ],
+  [
+    "Battery 63%  ·  3h left  ·   7.9W / 57Wh",
+    "Akku 63%  ·  noch 3 Std.  ·   7.9W / 57Wh"
+  ],
+  [
+    "Battery 7%  ·  25m left  ·   9W / 57Wh",
+    "Akku 7%  ·  noch 25 Min.  ·   9W / 57Wh"
+  ],
+  [
+    "Berlin  ·  Temp 12°C  ·  Wind ↗10km/h",
+    "Berlin  ·  Temperatur 12°C  ·  Wind ↗10km/h"
+  ],
+  [
+    "Weather unavailable",
+    "Wetter nicht verfügbar"
+  ],
+  [
+    "Freitag 10:15  ·  02 Oktober 2026  ·  Week 40",
+    "Freitag 10:15  ·  2. Oktober 2026  ·  KW40"
+  ],
+  [
+    "Montag 08:03  ·  16 März 2026  ·  Week 12",
+    "Montag 08:03  ·  16. März 2026  ·  KW12"
+  ],
+  [
+    "Screen recording directory does not exist: /home/fbk/Videos",
+    "Ordner für Bildschirmaufnahmen fehlt: /home/fbk/Videos"
+  ],
+  [
+    "Created screenshot directory: /home/fbk/Pictures",
+    "Ordner für Screenshots angelegt: /home/fbk/Pictures"
+  ],
+  [
+    "Screenshot saved to clipboard and file",
+    "Screenshot gespeichert und in die Zwischenablage kopiert"
+  ],
+  [
+    "Edit with Super + Alt + , (or click this)",
+    "Bearbeiten mit Super + Alt + , (oder hier klicken)"
+  ],
+  [
+    "Transcoding video…",
+    "Video wird konvertiert…"
+  ],
+  [
+    "Transcoded to 1080p mp4",
+    "In mp4 (1080p) konvertiert"
+  ],
+  [
+    "Transcoded to 4k gif",
+    "In gif (4k) konvertiert"
+  ],
+  [
+    "Transcoded to high jpg",
+    "In jpg (hohe Qualität) konvertiert"
+  ],
+  [
+    "Transcoded to medium png",
+    "In png (mittlere Qualität) konvertiert"
+  ],
+  [
+    "Transcoded to low jpg",
+    "In jpg (niedrige Qualität) konvertiert"
+  ],
+  [
+    "clip 2026-10-02.mov to mp4 (720p)",
+    "clip 2026-10-02.mov als mp4 (720p)"
+  ],
+  [
+    "Helix is now the default editor",
+    "Helix ist jetzt der Standard-Editor"
+  ],
+  [
+    "Firefox is now the default browser",
+    "Firefox ist jetzt der Standard-Browser"
+  ],
+  [
+    "Ghostty is now the default terminal",
+    "Ghostty ist jetzt das Standard-Terminal"
+  ],
+  [
+    "No saved width found for firefox on workspace 3",
+    "Keine gespeicherte Breite für firefox auf Arbeitsfläche 3"
+  ],
+  [
+    "Saved width for Alacritty on workspace 1",
+    "Breite für Alacritty auf Arbeitsfläche 1 gespeichert"
+  ],
+  [
+    "Use Super + Alt + Home to save one for this workspace.",
+    "Mit Super + Alt + Pos1 für diese Arbeitsfläche speichern."
+  ],
+  [
+    "Mirroring enabled (HDMI-A-1)",
+    "Bildschirm wird gespiegelt (HDMI-A-1)"
+  ],
+  [
+    "Workspace layout set to scrolling",
+    "Arbeitsflächen-Layout: Scrolling"
+  ],
+  [
+    "The session was left unlocked (no lock screen is configured).",
+    "Die Sitzung blieb ungesperrt (keine Bildschirmsperre eingerichtet)."
+  ],
+  [
+    "The session was left unlocked (the shell did not secure the session within 3000ms).",
+    "Die Sitzung blieb ungesperrt (die Shell hat sie nicht innerhalb von 3000 ms gesichert)."
+  ],
+  [
+    "Process crashed: firefox",
+    "Abgestürzt: firefox"
+  ],
+  [
+    "Click to diagnose with AI",
+    "Klicken, um den Absturz mit KI zu analysieren"
+  ],
+  [
+    "Could not send to dhh-fd",
+    "Senden an dhh-fd fehlgeschlagen"
+  ],
+  [
+    "Sent to dhh-fd",
+    "An dhh-fd gesendet"
+  ],
+  [
+    "3 files",
+    "3 Dateien"
+  ],
+  [
+    "Received notes.pdf",
+    "notes.pdf empfangen"
+  ],
+  [
+    "Saved to ~/Downloads",
+    "Gespeichert in ~/Downloads"
+  ],
+  [
+    "Timezone is now set to Europe/Berlin",
+    "Zeitzone ist jetzt Europe/Berlin"
+  ],
+  [
+    "Click to run 1 pending migration.",
+    "Klicken, um 1 offene Migration auszuführen."
+  ],
+  [
+    "Click to run 4 pending migrations.",
+    "Klicken, um 4 offene Migrationen auszuführen."
+  ],
+  [
+    "Super Mario World installed",
+    "Super Mario World installiert"
+  ],
+  [
+    "Your new font is JetBrainsMono Nerd Font",
+    "Ihre neue Schriftart: JetBrainsMono Nerd Font"
+  ],
+  [
+    "Your new theme is tokyo-night",
+    "Ihr neues Theme: tokyo-night"
+  ],
+  [
+    "Super + K for cheatsheet.\nSuper + Space for Omarchy Menu.",
+    "Super + K zeigt die Tastenkürzel.\nSuper + Leertaste öffnet das Omarchy-Menü."
+  ],
+  [
+    "No plugin to clone",
+    "Kein Plugin zum Klonen"
+  ],
+  [
+    "Microphone muted",
+    "Mikrofon stumm"
+  ],
+  [
+    "Touchscreen disabled",
+    "Touchscreen deaktiviert"
+  ],
+  [
+    "Shutting down",
+    "Wird heruntergefahren"
+  ],
+  [
+    "Launching application…",
+    "App wird gestartet…"
+  ],
+  [
+    "Launching Firefox…",
+    "Firefox wird gestartet…"
+  ],
+  [
+    "5-min reminder in 4m 59s (14:30)\n10-min reminder in 9m (14:35)",
+    "5-Minuten-Erinnerung in 4 Min. 59 Sek. (14:30)\n10-Minuten-Erinnerung in 9 Min. (14:35)"
+  ],
+  [
+    "Something unrelated",
+    "Something unrelated"
+  ]
+]

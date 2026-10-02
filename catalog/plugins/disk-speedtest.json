@@ -1,0 +1,59 @@
+{
+  "source": "omarchy.disk-speedtest",
+  "id": "de.disk-speedtest",
+  "name": "Datenträger-Speedtest",
+  "copy": {
+    "SpeedTestOverlayDe.qml": "Ui/SpeedTestOverlay.qml"
+  },
+  "replace": [
+    {
+      "file": "Panel.qml",
+      "find": "root.error = root.stderrText || \"Disk speed test failed\"",
+      "replace": "root.error = root.stderrText || \"Datenträger-Speedtest fehlgeschlagen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "leftLabel: \"READ\"",
+      "replace": "leftLabel: \"LESEN\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "rightLabel: \"WRITE\"",
+      "replace": "rightLabel: \"SCHREIBEN\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "runAgainTooltip: \"Measure again\"",
+      "replace": "runAgainTooltip: \"Erneut messen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "  SpeedTestOverlay {\n",
+      "replace": "  SpeedTestOverlayDe {\n"
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Live disk write and read speed dials. Summon with: omarchy-shell shell summon omarchy.disk-speedtest\"",
+      "replace": "\"description\": \"Live-Tachos für Schreib- und Lesetempo des Datenträgers. Aufruf: omarchy-shell shell summon omarchy.disk-speedtest\""
+    },
+    {
+      "file": "SpeedTestOverlayDe.qml",
+      "find": "property string runAgainTooltip: \"Measure again\"",
+      "replace": "property string runAgainTooltip: \"Erneut messen\""
+    },
+    {
+      "file": "SpeedTestOverlayDe.qml",
+      "find": "text: \"Run Again\"",
+      "replace": "text: \"Erneut ausführen\""
+    }
+  ],
+  "ignore": [
+    "read",
+    "write",
+    "function",
+    "disk",
+    "omarchy-disk-speedtest",
+    "MB/s",
+    "Disk speed test"
+  ]
+}

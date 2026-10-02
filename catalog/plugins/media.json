@@ -1,0 +1,81 @@
+{
+  "source": "omarchy.media",
+  "id": "de.media",
+  "name": "Medien",
+  "replace": [
+    {
+      "file": "BarWidget.qml",
+      "find": "text: root.title || \"Nothing playing\"",
+      "replace": "text: root.title || \"Keine Wiedergabe\""
+    },
+    {
+      "file": "BarWidget.qml",
+      "find": "|| \"Media source\") : \"Media source\"",
+      "replace": "|| \"Medienquelle\") : \"Medienquelle\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "root.showOsd(\"Source\", \"media-source\"",
+      "replace": "root.showOsd(\"Quelle\", \"media-source\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "var actionLabel = \"Play/pause\"",
+      "replace": "var actionLabel = \"Abspielen/Pause\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "actionLabel = \"Next\"",
+      "replace": "actionLabel = \"Nächster Titel\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "actionLabel = \"Previous\"",
+      "replace": "actionLabel = \"Vorheriger Titel\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "actionLabel = \"Play\"",
+      "replace": "actionLabel = \"Abspielen\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "actionLabel = player && player.isPlaying ? \"Pause\" : \"Play\"",
+      "replace": "actionLabel = player && player.isPlaying ? \"Pause\" : \"Abspielen\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"MPRIS media control service\"",
+      "replace": "\"description\": \"Mediensteuerung über MPRIS (Dienst)\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"MPRIS now-playing with playback controls\"",
+      "replace": "\"description\": \"Aktuelle Wiedergabe über MPRIS mit Steuerung\""
+    }
+  ],
+  "ignore": [
+    "next",
+    "playPause",
+    "previous",
+    "normal",
+    "transparent",
+    "playerctld",
+    "play",
+    "pause",
+    "Stream/Output/Audio",
+    "AudioOutStream",
+    "Output",
+    "undefined",
+    "media",
+    "media-source",
+    "media-next",
+    "media-previous",
+    "media-play",
+    "Pause",
+    "media-pause",
+    "ok",
+    "unhandled",
+    "Media"
+  ]
+}

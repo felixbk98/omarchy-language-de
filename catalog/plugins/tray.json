@@ -1,0 +1,66 @@
+{
+  "source": "omarchy.tray",
+  "id": "de.tray",
+  "name": "Infobereich",
+  "replace": [
+    {
+      "file": "Tray.qml",
+      "find": "text: \"Tray icons\"",
+      "replace": "text: \"Symbole im Infobereich\""
+    },
+    {
+      "file": "Tray.qml",
+      "find": "text: \"Pinned icons stay visible. Hidden icons never show.\"",
+      "replace": "text: \"Angeheftete Symbole bleiben sichtbar. Ausgeblendete erscheinen nie.\""
+    },
+    {
+      "file": "Tray.qml",
+      "find": "text: \"No tray items reporting.\"",
+      "replace": "text: \"Keine Symbole im Infobereich.\""
+    },
+    {
+      "file": "Tray.qml",
+      "find": "(id || \"Unknown\")",
+      "replace": "(id || \"Unbekannt\")"
+    },
+    {
+      "file": "Tray.qml",
+      "find": "? \"Unpin\" : \"Pin\"",
+      "replace": "? \"Lösen\" : \"Anheften\""
+    },
+    {
+      "file": "Tray.qml",
+      "find": "? \"Show\" : \"Hide\"",
+      "replace": "? \"Einblenden\" : \"Ausblenden\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Status notifier items\"",
+      "replace": "\"description\": \"Symbole laufender Apps\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "pinned",
+    "drawer",
+    "all",
+    "-symbolic",
+    "hidden",
+    "function",
+    "\\uf053",
+    "\\uf08d",
+    "\\uf06e",
+    "transparent",
+    "\\uf00c",
+    "string",
+    "object",
+    "left",
+    "center",
+    "right",
+    "localsend",
+    "dropbox",
+    "undefined",
+    "System tray",
+    "Status"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "source": "omarchy.audio",
+  "id": "de.audio",
+  "name": "Audio",
+  "replace": [
+    {
+      "file": "Model.js",
+      "find": "if (muted) return \"Muted\"",
+      "replace": "if (muted) return \"Stumm\""
+    },
+    {
+      "file": "Model.js",
+      "find": "if (p === 0) return \"Silenced\"",
+      "replace": "if (p === 0) return \"Stille\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Concert hall\"",
+      "replace": "return \"Konzertsaal\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Party mode\"",
+      "replace": "return \"Partylaune\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Cranked up\"",
+      "replace": "return \"Aufgedreht\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Steady groove\"",
+      "replace": "return \"Im Groove\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Easy listening\"",
+      "replace": "return \"Gemütlich\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Murmur\"",
+      "replace": "return \"Gemurmel\""
+    },
+    {
+      "file": "Model.js",
+      "find": "return \"Whisper\"",
+      "replace": "return \"Flüstern\""
+    },
+    {
+      "file": "Model.js",
+      "find": "if (!node) return \"Unknown\"",
+      "replace": "if (!node) return \"Unbekannt\""
+    },
+    {
+      "file": "Model.js",
+      "find": "|| node.name || \"Unknown\")",
+      "replace": "|| node.name || \"Unbekannt\")"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "toggleHint: anyAudible ? \"Mute\" : \"Unmute\"",
+      "replace": "toggleHint: anyAudible ? \"Stummschalten\" : \"Ton an\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"OUTPUT\"",
+      "replace": "text: \"AUSGABE\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"INPUT\"",
+      "replace": "text: \"EINGABE\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"SOURCES\"",
+      "replace": "text: \"APPS\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Volume slider, output picker, per-app mixer\"",
+      "replace": "\"description\": \"Lautstärke, Ausgabewahl, Mixer pro App\"",
+      "count": 2
+    }
+  ],
+  "ignore": [
+    "Stream/Output/Audio",
+    "AudioOutStream",
+    "Output",
+    "Audio/Source",
+    "AudioSource",
+    "Source",
+    "Microphone",
+    "headphone",
+    "headset",
+    "earbud",
+    "earphone",
+    "airpod",
+    "bluetooth",
+    "hdmi",
+    "display",
+    "webcam",
+    "camera",
+    "spotify",
+    "Spotify",
+    "audio-src",
+    "playerctld",
+    "Stream",
+    "undefined",
+    "quickshell",
+    "omarchy_speaker_tuning",
+    "output",
+    "header",
+    "transparent",
+    "input",
+    "streams",
+    "omarchy-audio-output-set-default",
+    "omarchy-audio-input-set-default",
+    "omarchy-audio-sink-availability",
+    "omarchy-audio-output-sink",
+    "interactive",
+    "Audio"
+  ]
+}

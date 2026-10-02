@@ -1,0 +1,55 @@
+{
+  "source": "omarchy.wifiqr",
+  "id": "de.wifiqr",
+  "name": "WLAN-QR-Code",
+  "replace": [
+    {
+      "file": "Panel.qml",
+      "find": "root.error = \"Could not generate the Wi-Fi QR code\"",
+      "replace": "root.error = \"WLAN-QR-Code konnte nicht erstellt werden\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "root.passwordError = \"Could not read the Wi-Fi password\"",
+      "replace": "root.passwordError = \"WLAN-Passwort konnte nicht gelesen werden\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: (root.ssid || \"Wi-Fi\").toUpperCase()",
+      "replace": "text: (root.ssid || \"WLAN\").toUpperCase()"
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Generating QR code…\"",
+      "replace": "text: \"QR-Code wird erstellt…\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": "text: \"Scan to join this network\"",
+      "replace": "text: \"Zum Verbinden scannen\""
+    },
+    {
+      "file": "Panel.qml",
+      "find": ": \"Show password\"",
+      "replace": ": \"Passwort anzeigen\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Share the connected Wi-Fi network as a scannable QR code\"",
+      "replace": "\"description\": \"Verbundenes WLAN als QR-Code zum Scannen teilen\""
+    }
+  ],
+  "ignore": [
+    "meta\\t",
+    "undefined",
+    "OMARCHY_PATH",
+    "white",
+    "function",
+    "omarchy-network-qr",
+    "--meta",
+    "nopass",
+    "omarchy-network-password",
+    "transparent",
+    "Wi-Fi QR"
+  ]
+}
