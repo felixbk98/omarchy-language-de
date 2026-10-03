@@ -18,7 +18,7 @@ offiziellen Erweiterungswege und übersteht jedes `omarchy update`.
 | Benachrichtigungen, OSD | Klone übersetzen Omarchy-Meldungen beim Anzeigen; Meldungen anderer Programme bleiben unberührt |
 | App-Namen | `Name[de]` in Omarchys Kopien unter `~/.local/share/applications` |
 | Emoji-Suche | Deutsche Stichwörter aus Unicode CLDR zusätzlich zu den englischen |
-| Extra: Kalender | Ein Klick in den Monatskalender der Uhr öffnet Google Kalender (Monatsansicht) im Browser |
+| Extra: Kalender | Ein Klick auf einen Tag im Uhr-Kalender öffnet Google Kalender (Monatsansicht) bei genau diesem Tag im Browser |
 
 Die Klone werden bei jedem Lauf **frisch aus dem installierten Omarchy**
 erzeugt; danach werden nur exakt festgelegte Textstellen ersetzt. Passt eine

@@ -95,8 +95,20 @@
     },
     {
       "file": "Panel.qml",
+      "find": "  function goToToday() {",
+      "replace": "  // Extra: öffnet Google Kalender in der Monatsansicht beim gegebenen Tag.\n  function openGoogleCalendar(year, month, day) {\n    Quickshell.execDetached([\"xdg-open\", \"https://calendar.google.com/calendar/u/0/r/month/\" + year + \"/\" + (month + 1) + \"/\" + day])\n    root.close()\n  }\n\n  function goToToday() {",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
       "find": "            Column {\n              id: gridColumn",
-      "replace": "            // Extra: ein Klick in den Monat öffnet Google Kalender (Monatsansicht).\n            // Liegt unter dem Raster, damit der \"W\"-Schalter Vorrang behält.\n            MouseArea {\n              anchors.fill: parent\n              cursorShape: Qt.PointingHandCursor\n              onClicked: {\n                Quickshell.execDetached([\"xdg-open\", \"https://calendar.google.com/calendar/u/0/r/month\"])\n                root.close()\n              }\n            }\n\n            Column {\n              id: gridColumn",
+      "replace": "            // Extra: ein Klick in den Monat öffnet ihn in Google Kalender.\n            // Liegt unter dem Raster, damit der \"W\"-Schalter Vorrang behält.\n            MouseArea {\n              anchors.fill: parent\n              cursorShape: Qt.PointingHandCursor\n              onClicked: {\n                root.openGoogleCalendar(root.viewYear, root.viewMonth, 1)\n              }\n            }\n\n            Column {\n              id: gridColumn",
+      "count": 1
+    },
+    {
+      "file": "Panel.qml",
+      "find": "                        font.bold: modelData.today\n                      }\n",
+      "replace": "                        font.bold: modelData.today\n                      }\n\n                      // Extra: Klick auf einen Tag öffnet genau diesen Tag in Google Kalender.\n                      MouseArea {\n                        anchors.fill: parent\n                        cursorShape: Qt.PointingHandCursor\n                        onClicked: root.openGoogleCalendar(modelData.year, modelData.month, modelData.day)\n                      }\n",
       "count": 1
     }
   ],
