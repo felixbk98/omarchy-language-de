@@ -1,0 +1,46 @@
+{
+  "source": "omarchy.polkit",
+  "id": "de.polkit",
+  "name": "Passwortabfrage",
+  "replace": [
+    {
+      "file": "PolkitAgent.qml",
+      "find": "text: root.errorFlash ? \"Wrong\" : (root.submitted ? \"Checking...\" : \"Enter password\")",
+      "replace": "text: root.errorFlash ? \"Falsch\" : (root.submitted ? \"Wird geprüft …\" : \"Passwort\")"
+    },
+    {
+      "file": "PolkitAgent.qml",
+      "find": "String(flow.message || \"Authentication is needed...\")",
+      "replace": "String(flow.message || \"Anmeldung erforderlich …\")"
+    },
+    {
+      "file": "PolkitModel.js",
+      "find": "return match ? \"Authorize running '\" + match[1] + \"'\" : text",
+      "replace": "return match ? \"„\" + match[1] + \"“ ausführen erlauben\" : text"
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Theme-aware authentication dialog for privileged actions.\"",
+      "replace": "\"description\": \"Passwortabfrage im Theme-Stil für Aktionen mit Administratorrechten.\""
+    }
+  ],
+  "ignore": [
+    "\\udb80\\ude37",
+    "\\uf023",
+    "bash",
+    "border",
+    "border-alpha",
+    "border-error",
+    "closed",
+    "finger",
+    "fprint",
+    "omarchy-hw-laptop-closed && echo closed || echo open",
+    "omarchy-polkit",
+    "pam_fprintd.so",
+    "polkit",
+    "shakeOffset",
+    "swipe",
+    "transparent",
+    "undefined"
+  ]
+}

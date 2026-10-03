@@ -41,6 +41,8 @@ Upload, Download, Touchpad, Touchscreen, Scratchpad, Sudo, Layoutnamen
 | AI (Menü) | KI (Eigenname „AI Assistant“ bleibt) |
 | Apps / Applications | Apps |
 | Audio | Audio |
+| Authentication | Anmeldung |
+| Authorize running … | „…“ ausführen erlauben |
 | Background | Hintergrund |
 | Balanced | Ausgewogen |
 | Battery | Akku |
@@ -48,6 +50,7 @@ Upload, Download, Touchpad, Touchscreen, Scratchpad, Sudo, Layoutnamen
 | Cancel | Abbrechen |
 | Capture | Aufnehmen |
 | Charge limit / Threshold | Ladegrenze |
+| Checking… | Wird geprüft … |
 | Clipboard | Zwischenablage |
 | Close | Schließen |
 | Config | Konfiguration |
@@ -74,6 +77,7 @@ Upload, Download, Touchpad, Touchscreen, Scratchpad, Sudo, Layoutnamen
 | Laptop Display | Laptop-Bildschirm |
 | Learn (Menü) | Hilfe |
 | Lock | Sperren |
+| Lock Screen | Sperrbildschirm |
 | Log out / Logout | Abmelden |
 | Menu Bar / Top bar | Menüleiste |
 | Microphone / Mic | Mikrofon |
@@ -88,6 +92,7 @@ Upload, Download, Touchpad, Touchscreen, Scratchpad, Sudo, Layoutnamen
 | Off / On | Aus / An |
 | Output / Input (audio) | Ausgabe / Eingabe |
 | Pair / Paired | Koppeln / Gekoppelt |
+| Password | Passwort |
 | Performance (Energieprofil) | Leistung |
 | Pin / Unpin | Anheften / Lösen |
 | Play / Pause | Abspielen / Pause |
@@ -134,6 +139,7 @@ Upload, Download, Touchpad, Touchscreen, Scratchpad, Sudo, Layoutnamen
 | Week (calendar) | KW |
 | Wi-Fi | WLAN |
 | Window gaps | Fensterabstände |
+| Wrong (Passwort) | Falsch |
 | Workspace | Arbeitsfläche |
 | Workspace layout | Arbeitsflächen-Layout |
 

@@ -1,0 +1,62 @@
+{
+  "source": "omarchy.lock",
+  "id": "de.lock",
+  "name": "Sperrbildschirm",
+  "replace": [
+    {
+      "file": "LockView.qml",
+      "find": "readonly property string placeholderText: \"Enter Password\"",
+      "replace": "readonly property string placeholderText: \"Passwort\""
+    },
+    {
+      "file": "LockView.qml",
+      "find": "root.authenticatingPassword ? \"Checking…\"",
+      "replace": "root.authenticatingPassword ? \"Wird geprüft …\""
+    },
+    {
+      "file": "Service.qml",
+      "find": "failureMessage = \"Authentication failed (\" + failedAttempts + \")\"",
+      "replace": "failureMessage = \"Anmeldung fehlgeschlagen (\" + failedAttempts + \")\""
+    },
+    {
+      "file": "manifest.json",
+      "find": "\"description\": \"Quickshell session lock with separate password and fingerprint PAM flows.\"",
+      "replace": "\"description\": \"Quickshell-Sperrbildschirm mit getrennter Anmeldung per Passwort und Fingerabdruck.\""
+    }
+  ],
+  "ignore": [
+    "\\u25CF",
+    "bash",
+    "border-active",
+    "border-alpha",
+    "border-error",
+    "false",
+    "file://",
+    "fingerprintIndicator",
+    "HOME",
+    "if [[ -f /etc/pam.d/omarchy-lock-fingerprint ]] && command -v fprintd-list >/dev/null 2>&1 && fprintd-list \\\"$USER\\\" 2>/dev/null | grep -qi finger; then echo yes; else echo no; fi",
+    "init",
+    "lock-denied: missing-pam",
+    "lock-pending: no-real-screen",
+    "lock-pending: screen-stabilizing",
+    "lock-requested",
+    "lock-stranded: recovering",
+    "LOGNAME",
+    "missing-pam",
+    "ok",
+    "omarchy-brightness-keyboard off; omarchy-brightness-display off",
+    "omarchy-hyprland-session-locked",
+    "omarchy-lock-fingerprint",
+    "omarchy-lock-password",
+    "omarchy-lock-preview",
+    "omarchy-system-wake",
+    "readlink",
+    "secure=",
+    "session-locked=",
+    "transparent",
+    "true",
+    "unlocked",
+    "USER",
+    "yes"
+  ]
+}
