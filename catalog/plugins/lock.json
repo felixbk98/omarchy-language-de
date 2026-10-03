@@ -11,12 +11,12 @@
     {
       "file": "LockView.qml",
       "find": "root.authenticatingPassword ? \"Checking…\"",
-      "replace": "root.authenticatingPassword ? \"Wird geprüft …\""
+      "replace": "root.authenticatingPassword ? \"Prüfe …\""
     },
     {
       "file": "Service.qml",
       "find": "failureMessage = \"Authentication failed (\" + failedAttempts + \")\"",
-      "replace": "failureMessage = \"Anmeldung fehlgeschlagen (\" + failedAttempts + \")\""
+      "replace": "failureMessage = \"Passwort falsch (\" + failedAttempts + \")\""
     },
     {
       "file": "manifest.json",

@@ -50,7 +50,7 @@ Upload, Download, Touchpad, Touchscreen, Scratchpad, Sudo, Layoutnamen
 | Cancel | Abbrechen |
 | Capture | Aufnehmen |
 | Charge limit / Threshold | Ladegrenze |
-| Checking… | Wird geprüft … |
+| Checking… | Prüfe … |
 | Clipboard | Zwischenablage |
 | Close | Schließen |
 | Config | Konfiguration |

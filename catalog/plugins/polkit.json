@@ -6,12 +6,12 @@
     {
       "file": "PolkitAgent.qml",
       "find": "text: root.errorFlash ? \"Wrong\" : (root.submitted ? \"Checking...\" : \"Enter password\")",
-      "replace": "text: root.errorFlash ? \"Falsch\" : (root.submitted ? \"Wird geprüft …\" : \"Passwort\")"
+      "replace": "text: root.errorFlash ? \"Falsch\" : (root.submitted ? \"Prüfe …\" : \"Passwort\")"
     },
     {
       "file": "PolkitAgent.qml",
       "find": "String(flow.message || \"Authentication is needed...\")",
-      "replace": "String(flow.message || \"Anmeldung erforderlich …\")"
+      "replace": "String(flow.message || \"Anmeldung nötig\")"
     },
     {
       "file": "PolkitModel.js",
