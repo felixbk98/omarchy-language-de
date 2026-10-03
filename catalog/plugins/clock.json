@@ -92,6 +92,12 @@
       "find": "\"description\": \"Date/time label with a calendar popup\"",
       "replace": "\"description\": \"Datum und Uhrzeit mit Kalender\"",
       "count": 2
+    },
+    {
+      "file": "Panel.qml",
+      "find": "            Column {\n              id: gridColumn",
+      "replace": "            // Extra: ein Klick in den Monat öffnet Google Kalender (Monatsansicht).\n            // Liegt unter dem Raster, damit der \"W\"-Schalter Vorrang behält.\n            MouseArea {\n              anchors.fill: parent\n              cursorShape: Qt.PointingHandCursor\n              onClicked: {\n                Quickshell.execDetached([\"xdg-open\", \"https://calendar.google.com/calendar/u/0/r/month\"])\n                root.close()\n              }\n            }\n\n            Column {\n              id: gridColumn",
+      "count": 1
     }
   ],
   "ignore": [
